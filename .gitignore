@@ -24,4 +24,9 @@ ref
 *.dll
 *.ini
 *.tcl
-Python/build2
+*.pyd
+*.pyc
+*.enc
+*.msg
+*.xbm
+build
