@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://kit.fontawesome.com/05375b3fb2.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Turret Road' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Tillana' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Frijole' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Ewert' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css?family=Caesar Dressing" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cabin Sketch" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=New Rocker' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Akronim' rel='stylesheet'>
+<link rel = "icon" href="https://i.kym-cdn.com/photos/images/newsfeed/001/622/136/7be.png"<type = "image/x-icon">
+<title>10B nettside</title>
+<style>
+body {
+	overflow: hidden;
+	background: url(https://www.karmoy.kommune.no/content/uploads/sites/19/2018/10/logo-vor-e1540462346894-2048x500.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 75%;
+	width: 100%;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+</style>
+</head>
+<body>
+<div id="piechart"></div>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['Gulag', 8],
+  ['Gaming', 2],
+  ['Gaming', 4],
+  ['Gaming', 2],
+  ['Gaming', 8]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'My Average Day', 'width':100, 'height':100};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+</body>
+</html>

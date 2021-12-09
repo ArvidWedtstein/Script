@@ -1,0 +1,2 @@
+@echo off
+start https://minskole.sharepoint.com/sites/EngelskB2018-2021/_layouts/15/WopiFrame.aspx?sourcedoc={df5e883d-6cf5-41b2-8c05-55cf357cf3bc}&action=view&wd=target%28Ringdal%2C%20Victor%2FClass-work.one%7Cdcf3a3bc-cf3f-49db-aa8e-426d7f35ca43%2FLotus%20form%20-%20USA%7Cc225b6f5-6f33-42ef-a01a-c319224bd8da%2F%29

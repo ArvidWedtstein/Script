@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://kit.fontawesome.com/05375b3fb2.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link rel = "icon" href="https://www.pnglot.com/pngfile/detail/58-580743_school-study-building-structure-architect-education-building-school.png"<type = "image/x-icon">
+<title>10D nettside</title>
+<style>
+body {
+	overflow: hidden;
+	background: url(https://www.karmoy.kommune.no/content/uploads/sites/19/2018/10/logo-vor-e1540462346894-2048x500.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 66%;
+	background-position: center;
+	width: 200%;
+	align-items: center;
+	justify-content: center;
+}
+.rgb-mode {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab );
+	background-size: 400% 200%;
+	animation: gradientBG 10s ease infinite;
+	color: #ffffff;
+}
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.head {
+  position: absolute;
+  width: 100vw;
+  font-family: Montserrat;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  top: -10px;
+  z-index: 3;
+  background: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: text 8s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(225, 225, 225, .2);
+}
+.head:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+box {
+  position: absolute;
+  width: 100%;
+  height: 7%;
+  padding: 20px;
+  top: 0;
+  z-index: 3;
+  left: 0;
+  cursor: pointer;
+  background: linear-gradient(to top, #333, #000);
+  box-shadow: 0 0 0 1px #353535, 0 0 0 1px #3e3e3e, inset 0 0 10px
+		rgba(0,0,0,1), 0 1px 20px rgba(0,0,0,.5), inset 0 0 15px rgba(0,0,0,.2);
+}
+.form-popup {
+  display: none;
+  position: fixed;
+  width: 64%;
+  height: 175px;
+  left: 20%;
+  bottom: 20%;
+  border: 3px solid #000000;
+  border-radius: 3px;
+  z-index: 9;
+}
+.form-container {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  background: linear-gradient(to top, #333, #000);
+  animation: animate 8s linear infinite;
+  background-size: 400%;
+}
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  float: right;
+  opacity: 0.8;
+  border-radius: 3px;
+}
+.cancel {
+background: red;
+}
+table, th, td {
+  border: 2px solid black;
+  background: white;
+  top: 5px;
+  left: 0px;
+  position: relative;
+  margin-left: 0px;
+}
+table {
+	border-collapse: collapse;
+}
+td {
+	width: 160px;
+	top: 0px;
+	height: 20px;
+	text-align: center;
+	background-color: #fff;
+	color: #000;
+}
+th { 
+	text-align: center;
+	top: 0px;
+	border-collapse: collapse;
+	background-color: #000;
+	color: white;
+}
+td:hover {
+  animation: animate 8s linear infinite;
+  filter: blur;
+  color: #000;
+}
+td:before {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 10;
+	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+	background-size: 400%;
+	opacity: 0;
+	transition: 0.3s;
+}
+td:hover:before {
+	filter: blur(25px);
+	opacity: 1;
+}
+@keyframes animate {
+	0%
+	{
+		background-position: 0%;
+	}
+	100%
+	{
+		background-position: 400%;
+	}
+}
+
+
+ul {
+  list-style-type: none;
+  margin-top: 3.19%;
+  margin-left: -8px;
+  width: 101.28%;
+  padding: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  overflow: hidden;
+  background-color: #333;
+  transform-origin: top;
+  
+}
+li {
+  float: left;
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-bottom: 2px solid #333;
+  transition: all 0.2s ease 0s, visibility 0s linear 0.5s;
+}
+li a:hover, .dropdown:hover .dropbtn {
+  border-bottom: 2px solid #ff0000;
+  transition-delay: 0.1s;
+  -webkit-transition: all 0.1s ease;
+    	-moz-transition: all 0.1s ease;
+   	 -o-transition: all 0.1s ease;
+  	 -ms-transition: all 0.1s ease;
+    	transition: all 0.1s ease;
+}
+li.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+  z-index: 10;
+  background: rgba(0,0,0,0.7);
+  margin: 0;
+  background-size: cover;
+  background-position: 50% 20%;
+}
+.dropdown-content a {
+  color: white;
+  padding: 6px 14px;
+  text-decoration: none;
+  display: block;
+  transition: all 0.1s ease-in-out 0s, visibility 0s linear 0.2s, z-index 0s linear 0.01s;
+  text-align: left;
+}
+.dropdown .show {display: block;}
+.dropdown-content a:hover {background-color: rgba(255,0,0,0.5);}
+.dropdown:hover .dropdown-content {
+  display: block;
+  z-index: 1;
+  animation: slide 0.2s;
+}
+@keyframes slide {
+	from 
+	{
+	z-index: -50;
+	margin-top: -400px;
+	}
+	to
+	{
+	z-index: 1;
+	margin-top: 0px;
+	}
+}
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  background: rgba(0,0,0,0.7);
+  margin: 0;
+  background-size: cover;
+  background-position: 70% 100%;
+  transform-origin: top;
+  box-shadow: 0px 0px 20px 5px #000;
+}
+.dropdown-content1 a {
+  color: white;
+  padding: 4px 14px;
+  text-decoration: none;
+  display: block;
+  transition: all 0.1s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  text-align: left;
+}
+.dropdown-content1 a:hover {background-color: rgba(0,255,255,0.5);
+border-bottom: 2px solid aqua;}
+.dropdown:hover .dropdown-content1 {
+  display: block;
+  animation: slide 0.2s;
+  z-index: 1;
+  transform-origin: top;
+}
+a { 
+	font-family: tahoma;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.9);
+  overflow-x: hidden;
+  overflow: auto;
+  transition: 0.5s;
+}
+.overlay-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.overlay a:hover {
+  color: #00e1ff;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 60px;
+}
+
+.clock {
+    position: absolute;
+    top: 3.5%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #ffffff;
+    font-size: 30px;
+    font-family: Cinzel;
+	mix-blend-mode: screen;
+	z-index: 4;
+    letter-spacing: 7px;
+	flex-direction: column;
+	border-radius: 5px;
+	background: transparent
+	box-shadow: 0 2px 5px rgba(0,255,255,0.3);
+	transition: 0.1s;
+	transform: perspective(1000px);
+}
+.clock:hover {
+	color: #00e1ff;
+	transition: .8s ease-in-out;
+	box-shadow: 0 2px 5px rgba(0,255,255,0.3);
+	transform: scale(1.1);
+}
+.help {
+	position: absolute;
+	height: 35px;
+	width: 35px;
+	background: linear-gradient(0deg, #ddd, #fff);
+	z-index: 4;
+	border-radius: 50%;
+	text-align: center;
+	margin-top: -4.5%;
+	margin-left: 93%;
+	padding: 2px;
+	text-decoration: none;
+	box-sizing: border-box;
+	transition: .5s;
+	box-shadow: 0 10px 15px rgba(255,255,255,0.3);
+	outline: none;
+}
+.help .fa {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: linear-gradient(0deg, #ddd, #fff);
+	border-radius: 50%;
+	color: #262626;
+	transition: .5s;
+	line-height: 27px;
+	font-size: 20px;
+
+}
+.help:hover {
+	box-shadow: 0 2px 5px rgba(255,255,255,0.3);
+}
+.helpRGB {
+	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+	background-size: 400%;
+	box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px
+	rgba(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), inset 0 0 15px rgba(0,0,0,.2);
+	animation: animate 8s linear infinite;
+	filter: blur;
+}
+.help-popup {
+  display: none;
+  position: fixed;
+  width: 40%;
+  height: 320px;
+  left: 20%;
+  bottom: 20%;
+  background: linear-gradient(to top, #333, #000);
+  border: 3px solid #000000;
+  border-radius: 3px;
+  z-index: 2;
+  cursor: -webkit-grab; cursor: grab;
+}
+	
+}
+.helpbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 5px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  margin-right: -60px;
+  font-size: 20px;
+  float: right;
+  opacity: 0.8;
+  border-radius: 3px;
+  outline: none;
+  position: absolute;
+}
+.cancel {
+background: transparent;
+color: #ffffff;
+}
+profile1 {
+	width: 120px;
+	margin-left: 27%;
+	margin-top: 0%;
+	height: 15px;
+	color: #ffffff;
+	z-index: 5;
+	font-size: 20px;
+	position: absolute;
+	border-radius: 5px;
+	text-align: center;
+	padding: 6px;
+	font-family: Allerta Stencil;
+}
+.flip-card {
+  margin-top: 10%;
+  margin-left: 10%;
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 10px 5px #000000;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(-180deg);
+  box-shadow: 0px 0px 20px 5px #ff0000;
+  animation: glow 3s infinite;
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color: #000;
+  color: red;
+}
+.flip-card-back {
+  background: linear-gradient(to top, #333, #000);
+  color: white;
+  transform: rotateY(180deg);
+}
+@keyframes glow {
+	0%
+	{
+		box-shadow: 0px 0px 20px 5px #ff0000;
+	}
+	50%
+	{
+		box-shadow: 0px 0px 20px 15px #ff0000;
+	}
+	100%
+	{
+		box-shadow: 0px 0px 20px 5px #ff0000;
+	}
+}
+.flip-card2 {
+  margin-top: -39%;
+  margin-left: 55%;
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+}
+.flip-card-inner2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 10px 5px #000000;
+}
+.flip-card2:hover .flip-card-inner2 {
+  transform: rotateY(180deg);
+  box-shadow: 0px 0px 20px 5px #ff0000;
+  animation: glow 3s infinite;
+}
+.flip-card-front2, .flip-card-back2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-card-front2 {
+  background-color: #000;
+  color: red;
+}
+.flip-card-back2 {
+  background: linear-gradient(to top, #333, #000);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+#myInput {
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 50%;
+  padding: 8px;
+  margin-bottom: 22px;
+  color: #ffffff;
+  border-radius: 20px;
+  font-family: "Franklin Gothic Medium";
+  background: linear-gradient(0deg, #333, #000);
+  border: 1px black;
+  outline: none;
+  box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px
+		rgba(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), inset 0 0 15px rgba(0,0,0,.2);
+}
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#myUL li1 a {
+  padding: 8px;
+  font-family: "Franklin Gothic Medium";
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  float: center;
+  transition: 0.3s;
+}
+#myUL li1 a:hover:not(.header) {
+  background-color: rgba(255,255,255,0.1);
+  transform: scale(1.1) translateX(20px);
+  color: #ffffff;
+}
+#inputtext {display:none;color:red}
+input[type="button"] 
+{ 
+    background: linear-gradient(0deg, #ddd, #fff);
+    color: black; 
+    border: solid black 0.5px; 
+    width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	font-size: 20px;
+	transition: 0.1s;
+	font-family: "Syncopate";
+} 
+input[type="button"]:hover
+{
+	color: white;
+	background: linear-gradient(to top, #333, #000);
+}
+input[type="text"] 
+{ 
+    background: linear-gradient(0deg, #ddd, #fff);
+    border: solid black 0.5px; 
+    width: 137px; 
+	font-size: 25px;
+	padding: 5px;
+	margin: 5px;
+} 
+
+
+svg
+{
+	position: relative;
+	margin-left: 20%;
+}
+svg .draw
+{
+	stroke: #ffffff;
+	fill: rgba(0,0,0,0);
+	stroke-width: 10px;
+	stroke-dasharray: 3200;
+	stroke-dashoffset: 3200;
+	stroke-linejoin: bevel;
+	animation: drawline 15s infinite;
+	animation-direction: alternate;
+	
+}
+@keyframes drawline 
+{
+	to 
+	{
+		stroke-dashoffset: 0;
+	}
+}
+#gx {background-size:contain; padding:10% 0; text-align:center; width:100%; height:auto; display: none;}
+#gx-logo {animation:tronFilter 5s infinite; 
+    fill:#000000; stroke:#666; stroke-width:10; stroke-linejoin:bevel;}
+@keyframes tronFilter {
+    0% {-webkit-filter: drop-shadow( -.75px 0px 6px #31eefd );
+                filter: drop-shadow( -.75px 0px 6px #31eefd ); stroke:#31eefd;} 
+   22% {-webkit-filter: drop-shadow( -.75px 0px 6px #1d85bb );
+                filter: drop-shadow( -.75px 0px 6px #1d85bb ); stroke:#1d85bb;} /* end blue */  
+    
+   42% {-webkit-filter: drop-shadow( -.75px 0px 6px #884173 );
+                filter: drop-shadow( -.75px 0px 6px #884173 ); stroke:#884173;}
+   62% {-webkit-filter: drop-shadow( -.75px 0px 6px #ff0071 );
+                filter: drop-shadow( -.75px 0px 6px #ff0071 ); stroke:#ff0071;} /* end magenta */  
+   82% {-webkit-filter: drop-shadow( -.75px 0px 6px #009997 );
+                filter: drop-shadow( -.75px 0px 6px #009997 ); stroke:#009997;}
+   92% {-webkit-filter: drop-shadow( -.75px 0px 6px #92ffd7 );
+                filter: drop-shadow( -.75px 0px 6px #92ffd7 ); stroke:#92ffd7;} /* end green */      
+  100% {-webkit-filter: drop-shadow( -.75px 0px 6px #31eefd );
+                filter: drop-shadow( -.75px 0px 6px #31eefd ); stroke:#31eefd;} 
+}
+
+#map {
+	width: 100%;
+	height: 100%;
+	margin-left: -100px;
+	display: none;
+}
+@-webkit-keyframes fire 
+{
+0%{text-shadow:   0 0 2px white, 0 -5px 4px #ff3,    2px -10px 6px #fd3, -2px -15px 11px #f80, -2px -25px 18px #f20;}
+25%{text-shadow:  0 0 3px white, 1px -6px 5px #ff3,  1px -11px 7px #fd3, -2px -16px 13px #f80, -0px -26px 20px #f20;}  
+50%{text-shadow:  0 0 3px white, -1px -4px 6px #ff3, 0px -12px 6px #fd3, -3px -16px 15px #f80, -1px -28px 22px #f20;}
+75%{text-shadow:  0 0 2px white, 1px -7px 4px #ff3,  1px -11px 8px #fd3, -1px -14px 12px #f80, -2px -25px 21px #f20;}
+100%{text-shadow: 0 0 2px white, 0 -5px 4px #ff3,    2px -10px 6px #fd3, -2px -15px 11px #f80, -2px -25px 18px #f20;}
+}
+
+
+
+.form-popupsettings {
+  display: none;
+  position: fixed;
+  width: 90%;
+  height: 50%;
+  transform: translate(-50%,-50%);
+  margin-top: -250px;
+  margin-left: 1200px;
+  left: 1%;
+  z-index: 9;
+}
+.form-containersettings {
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%,-50%);
+  padding: 0px;
+  background: linear-gradient(to top, #333, #000);
+}
+.btnsettings {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  float: right;
+  opacity: 0.8;
+  border-radius: 3px;
+  margin-top: 25px;
+  margin-right: 5px;
+  outline: none;
+  transform: translate(-50%,-50%);
+}
+.cancel {
+background: red;
+}
+.Innstillinger {
+	font-family: Tahoma;
+	position: absolute;
+	font-size: 2vw;
+	margin-top: 0%;
+	margin-left: 37%;
+	z-index: 10;
+	color: #ffffff;
+	text-decoration: underline;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	text-align: center;
+	justify-content: center;
+}
+.stext {
+	position: absolute;
+	font-family: Allerta Stencil;
+	font-size: 30px;
+	margin-left: 120px;
+	margin-top: 125px;
+	text-align: center;
+	color: #ffffff;
+}
+.center {
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	left: 5%;
+	transform: translate(-50%, -50%);
+	transform-style: preserve-3d;
+	perspective: 200px;
+	height: 40px;
+	width: 100px;
+	color: black;
+	border-radius: 40px;
+	box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px
+	rgba(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), inset 0 0 15px rgba(0,0,0,.2);
+}
+input[type="checkbox"] {
+	position: relative;
+	width: 100px;
+	height: 40px;
+	margin: 0;
+	-webkit-appearance: none;
+	z-index: 10;
+	outline: none;
+	transition: 0.5s;
+	color: black;
+	cursor: pointer;
+}
+span {
+	position: absolute;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	line-height: 40px;
+	height: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	pointer-events: none;
+	color: #000;
+	transform-style: preserve-3d;
+	perspective: 200px;
+}
+span:nth-child(2)
+{
+	left: 0;
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px;
+	background: #0f0;
+}
+span:nth-child(2):before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg,#f00,#de0808);
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px;
+	transform-origin: right;
+	transition: 1s;
+	backface-visibility: hidden;
+}	
+input[type="checkbox"]:checked ~ span:nth-child(2):before {
+	transform: rotateY(180deg);
+	
+}
+span:nth-child(3)
+{
+	right: 0;
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+	background: #f00;
+}
+span:nth-child(3):before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg,#0cd20c,#0f0);
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+	transform-origin: left;
+	transition: 1s;
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+}	
+input[type="checkbox"]:checked ~ span:nth-child(3):before {
+	transform: rotateY(360deg);
+}
+@keyframes RGBmode {
+	0%
+	{
+		background-position: 0%;
+	}
+	100%
+	{
+		background-position: 400%;
+	}
+}
+section {
+	width: 100%;
+	height: 100vh;
+}
+.isometric {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background: url(https://cdn.wallpapersafari.com/58/1/xpDOZn.jpg);
+	background-size: cover;
+	background-position: 50% 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) rotateX(45deg) rotateZ(-45deg);
+	transform-style: preserve-3d;
+	transition: 0.5s;
+	animation: glowRGB 2s infinite;
+}
+@keyframes glowRGB {
+	0%{box-shadow: -10px 10px 20px rgba(0,0,0,0.8), -20px 20px 80px rgba(255,0,0,1);}
+	20%{box-shadow: -10px 10px 20px rgba(0,0,0,0.8), -20px 20px 60px rgba(255,0,0,1);}
+	40%{box-shadow: -10px 10px 20px rgba(0,0,0,0.8), -20px 20px 50px rgba(255,0,0,1);}
+	60%{box-shadow: -10px 10px 20px rgba(0,0,0,0.8), -20px 20px 40px rgba(255,0,0,1);}
+	80%{box-shadow: -10px 10px 20px rgba(0,0,0,0.8), -20px 20px 60px rgba(255,0,0,1);}
+	100%{box-shadow: -10px 10px 20px rgba(0,0,0,0.8), -20px 20px 80px rgba(255,0,0,1);}
+}
+.isometric:hover {
+	transform: translate(-50%,-50%) rotateX(0deg) rotateZ(0deg);
+	box-shadow: 0 20px 20px rgba(0,0,0,0.5);
+	transition: 0.5s;
+	animation: none;
+}
+.isometric:before {
+	content: '';
+	width: 100%;
+	height: 10px;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background: linear-gradient(#1b1b1b, #ce0000);
+	transform-origin: top;
+	transform: skewX(-45deg) scaleY(1);
+	transition: 0.5s;
+	animation: glow2RGB 10s infinite;
+}
+.isometric:hover:before {
+	transform: skewX(-45deg) scaleY(0);
+}
+.isometric:after {
+	content: '';
+	width: 10px;
+	height: 100%;
+	position: absolute;
+	left: -10px;
+	top: 10px;
+	background: linear-gradient(to left, #1b1b1b, #ce0000);
+	transform-origin: left;
+	transform: skewY(-45deg) scaleX(1);
+	transition: 0.5s;
+	animation: glow3RGB 10s infinite;
+}
+.isometric:hover:after {
+	left: 0px;
+	top: 0px;
+	transform: skewY(-45deg) scaleX(0);
+}
+</style> 
+<box></box>
+<p class="head">10D Nettside</p>
+<button id="HelpBtn" title="Om" type="button" class="help" onclick="openHelp()"><i class="fa fa-question-circle"></i></button>
+<div class="help-popup" id="myHelp">
+  <form action="/action_page.php">
+  <button type="button" class="helpbtn cancel" onclick="closeHelp()">X</button>
+  <profile1>Laget av</profile1>
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://scontent.fosl1-1.fna.fbcdn.net/v/t1.0-1/p160x160/71565127_523026921606699_4314861734838927360_n.jpg?_nc_cat=100&_nc_ohc=YwKNfcCbJ8MAQnouXwwqn1SEtVO534cERW_UoS8RpgNfMmxnChpDyIa6g&_nc_ht=scontent.fosl1-1.fna&oh=c42fd79076131269a9fee37cc4eb1cff&oe=5E8B8362" alt="Avatar" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Erling Vik</h1> 
+      <p>Elev</p> 
+      <p>Programmerer HTML, CSS, Batch og Powershell</p>
+    </div>
+  </div>
+</div>
+<div class="flip-card2">
+  <div class="flip-card-inner2">
+    <div class="flip-card-front2">
+      <img src="https://scontent.fosl1-1.fna.fbcdn.net/v/t1.0-1/42258308_350105315736831_2339131148946374656_n.jpg?_nc_cat=108&_nc_ohc=P3tV87O5cbQAQlFyVie4tAIfoSkW6exxiXqUkaLBzlHSvmKQ8netAh7qg&_nc_ht=scontent.fosl1-1.fna&oh=9dda4862260b8b4596a5a26f1a79f53f&oe=5E71EE14" alt="Avatar" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back2">
+      <h1>Arvid Wedtstein</h1> 
+      <p>Elev</p> 
+      <p>Programmerer HTML, CSS, Batch og Powershell</p>
+    </div>
+  </div>
+</div>
+</div>
+</form>
+</div>
+</head>
+<body>
+<ul id="Ul" style="overflow-x:auto;">
+  <li title="Åpne Timeplan" onclick="openTP()"><a href="#">TimePlan</a></li>
+  <li class="dropdown">
+	<a onclick="dropdown1()" href="javascript:void(0) class="dropbtn"><img src="https://shawnharry.co.uk/wp-content/uploads/2019/01/new-teams-logo.png" width="20" height="19.5" align="top"></img></a>
+	<div id="showDropdown1" class="dropdown-content1">
+		<a target="_blank" href="https://teams.microsoft.com/l/team/19%3a1066c20364064de8898f637c5aaf0884%40thread.skype/conversations?groupId=d5aba151-fb49-4c6d-8004-caa51e17be40&tenantId=0d451d9c-1ee6-4809-b726-5820bf961327">10D</a>
+		<a target="_blank" href="https://teams.microsoft.com/l/team/19%3abda47122d1624714b96e48932a991fb1%40thread.skype/conversations?groupId=8ec1948d-8abe-483d-9ef0-673c5506421e&tenantId=0d451d9c-1ee6-4809-b726-5820bf961327">Norsk</a>
+		<a target="_blank" href="https://teams.microsoft.com/l/team/19%3af298a9e1f5944116b05673225b58619a%40thread.skype/conversations?groupId=9543813d-6e91-49b1-a47c-e6ea24b55e06&tenantId=0d451d9c-1ee6-4809-b726-5820bf961327">Naturfag</a>
+		<a target="_blank" href="https://teams.microsoft.com/l/team/19%3afe3fa71672bb42c1b284709b61b829da%40thread.skype/conversations?groupId=44ee7913-2b7c-40c5-83cb-4f7825d7e703&tenantId=0d451d9c-1ee6-4809-b726-5820bf961327">Matte</a>
+		<a target="_blank" href="https://teams.microsoft.com/l/team/19%3af63419799a18465abb6d8ecb58141aef%40thread.skype/conversations?groupId=b15cbb1c-2723-4bc5-836b-06cfb6c23b7c&tenantId=0d451d9c-1ee6-4809-b726-5820bf961327">Samfunnsfag</a>
+		<a target="_blank" href="https://teams.microsoft.com/l/team/19%3a40660d9d25974f61aa2333a70bc20cd0%40thread.skype/conversations?groupId=0f143062-deca-4660-bc2d-4809afdc6db0&tenantId=0d451d9c-1ee6-4809-b726-5820bf961327">Engelsk</a>
+		<a target="_blank" href="https://teams.microsoft.com/l/team/19%3a0f013e71bc754fb5a5d738e81cbf5b4f%40thread.skype/conversations?groupId=99488d57-8494-4b3e-a0de-1e5c242d1efd&tenantId=0d451d9c-1ee6-4809-b726-5820bf961327">Krle</a>
+		<a target="_blank" href="https://teams.microsoft.com/l/team/19%3ad35bcea753f84c1eb2a73b184a6917cb%40thread.skype/conversations?groupId=f8e1070f-0f29-4db0-b1ed-bcaf80a73a1f&tenantId=0d451d9c-1ee6-4809-b726-5820bf961327">K & H</a>
+		<a target="_blank" href="https://teams.microsoft.com/l/team/19%3adb7ec740f53b4846842f7c577c6c8105%40thread.skype/conversations?groupId=309d5646-7f70-476d-aeb6-4af772bd8437&tenantId=0d451d9c-1ee6-4809-b726-5820bf961327">Utdanningvalg</a>
+		<a target="_blank" href="https://teams.microsoft.com/_#/school/conversations/Generelt?threadId=19:c5d8ad58b9e04612b60e95526abaa31f@thread.skype&ctx=channel">Tysk</a>
+		<a target="_blank" href="https://teams.microsoft.com/_#/school/conversations/Generelt?threadId=19:5410589a15264a94bc243594220136dc@thread.skype&ctx=channel">Spansk</a>
+		<a target="_blank" href="https://teams.microsoft.com/_#/school/conversations/Generelt?threadId=19:fcebf82a9c394c8fad3d5fc9aecffa38@thread.skype&ctx=channel">Fransk</a>
+		<a target="_blank" href="https://teams.microsoft.com/l/team/19%3a24171a3b54b44abca4c8ae6f2860de6a%40thread.skype/conversations?groupId=14ca9386-7d71-4d70-a117-734431157a47&tenantId=0d451d9c-1ee6-4809-b726-5820bf961327">Trafikk</a>
+	</div>
+  <li class="dropdown">
+    <a onclick="dropdown()" href="javascript:void(0)" class="dropbtn">OneNote <i class="fa fa-angle-down fa-spin"></i></a>
+    <div id="showDropdown" class="dropdown-content">
+		<a target="_blank" href="https://minskole.sharepoint.com/:o:/r/sites/D-klassen2017-2020/SiteAssets/Notatblokk%20for%20D-klassen%202017-2020?d=wdbdaecdfa5a44f539ce5d7a499e5b2cf&csf=1&e=hO3bvX">10D</a>
+		<a target="_blank" href="https://minskole.sharepoint.com/:o:/r/sites/NorskD2017-2020/SiteAssets/Notatblokk%20for%20Norsk%20D%202017-2020?d=w48bf89f3a39b4726b1437b6294892a7e&csf=1&e=mbzbTC">Norsk</a>
+		<a target="_blank" href="https://minskole.sharepoint.com/:o:/r/sites/D-klassen2017-2020/SiteAssets/Notatblokk%20for%20D-klassen%202017-2020?d=wdbdaecdfa5a44f539ce5d7a499e5b2cf&csf=1&e=hO3bvX">Naturfag</a>
+		<a target="_blank" href="https://minskole.sharepoint.com/:o:/r/sites/MatematikkD2017-2020/SiteAssets/Notatblokk%20for%20Matematikk%20D%202017-2020?d=w67111e44ff53406d90f059bbd9e6b3d2&csf=1&e=BdsflS">Matte</a>
+		<a target="_blank" href="https://minskole.sharepoint.com/:o:/r/sites/Samf.fagD2017-2020/SiteAssets/Notatblokk%20for%20Samf.fag%20D%202017-2020?d=wf1af231ba8a94feda7aa6bd2f35dac61&csf=1&e=hbds1o">Samfunnsfag</a>
+		<a target="_blank" href="https://minskole.sharepoint.com/:o:/r/sites/Tysk2017-2020/_layouts/15/WopiFrame.aspx?sourcedoc=%7B17747996-7F5A-47B1-A653-F5319B08E97A%7D&file=Notatblokk%20for%20Tysk%202017-2020&action=default&wdorigin=704&RootFolder=%2fsites%2fTysk2017%2d2020%2fSiteAssets%2fNotatblokk%20for%20Tysk%202017%2d2020&cid=98878526-ebf8-4982-8d0e-f6067ce7e1ce">Tysk</a>
+		<a target="_blank" href="https://minskole.sharepoint.com/:o:/r/sites/EngelskD2017-2020/SiteAssets/Notatblokk%20for%20Engelsk%20D%20(2017-2020)?d=wcc3662f2d8f344b7819041e7084b097c&csf=1&e=dp6KvB">Engelsk</a>
+		<a target="_blank" href="https://minskole.sharepoint.com/:o:/r/sites/KRLED2017-2020/SiteAssets/Notatblokk%20for%20KRLE%20D%202017-2020?d=wc4e024d7b9094671b3ec10ef27390439&csf=1&e=fQTbdM">Krle</a>
+		<a target="_blank" href="https://minskole.sharepoint.com/:o:/r/sites/KH10D201920/SiteAssets/Notatblokk%20for%20K%26H%2010D%202019-20?d=wfe4881504e49442398bdeed0e1501827&csf=1&e=AEfro1">K & H</a>
+		<a target="_blank" href="https://minskole.sharepoint.com/:o:/r/sites/utdanningsvalg10.trinn2019-2020/SiteAssets/Notatblokk%20for%20utdanningsvalg%2010-trinn%202019-2020?d=w056cdb08d0134ad08956b5e9a3ab5577&csf=1&e=dZnVeR">Utdanningsvalg</a>
+		<a target="_blank" href="https://minskole.sharepoint.com/:o:/r/sites/Fransk2017-2020/_layouts/15/WopiFrame.aspx?sourcedoc=%7BAA4BBE7C-A3FE-4657-92F9-49A5B71331C6%7D&file=Notatblokk%20for%20Fransk%202017-2020&action=default&wdorigin=Sharepoint&RootFolder=%2fsites%2fFransk2017%2d2020%2fSiteAssets%2fNotatblokk%20for%20Fransk%202017%2d2020&web=1&ct=1574943760991&wdOrigin=OFFICECOM-WEB&START=&MRU=&cid=12631407-4c38-4142-a960-e9ec599c9716">Fransk</a>
+		<a target="_blank" href="https://minskole.sharepoint.com/:o:/r/sites/Trafikk-20192020/SiteAssets/Notatblokk%20for%20Trafikk%20-%202019-2020?d=we152e78c07a1456983daa34cc67a342d&csf=1&e=t6ndho">Trafikk</a>
+	</div>
+  </li>
+  <li id="Klasseliste" title="Åpne Klasseliste" onclick="openNav()"><a href="javascript:void(0)">Klasseliste</a></li>
+  <li title="Åpne Kalkulator" onclick="openKalk()"><a href="javascript:void(0)"><i class="fa fa-calculator"></i></a></li>
+  <li title="Åpne Kart" onclick="openMap()"><a href="javascript:void(0)"><i onclick="Toggle(this)" class="far fa-map"></i></a></li>
+  <li title="Været" onclick="openWeather()"><a href="javascript:void(0)"><i class="fas fa-cloud-sun-rain"></i></a></li>
+  <li title="Innstillinger" onclick="Settings()"><a href="#"><i class="fas fa-cog"></i></a></li>
+</ul>
+
+<div id="myNav1" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeKalk()">&times;</a>
+  <div class="overlay-content">
+		<div class ="">Kalkulator</div> 
+      <table2 border="1"> 
+         <tr2> 
+            <td2 colspan="3" rowspan="3"><input type="text" id="result"/></td2> 
+            <td2><input type="button" value="C" onclick="clr()"/> </td2> 
+         </tr2> 
+         <tr2> 
+            <td2><input type="button" value="1" onclick="dis('1')"/> </td2> 
+            <td2><input type="button" value="2" onclick="dis('2')"/> </td2> 
+            <td2><input type="button" value="3" onclick="dis('3')"/> </td2> 
+            <td2><input type="button" value=":" onclick="dis('/')"/> </td2> 
+         </tr2> 
+         <tr2> 
+            <td2><input type="button" value="4" onclick="dis('4')"/> </td2> 
+            <td2><input type="button" value="5" onclick="dis('5')"/> </td2> 
+            <td2><input type="button" value="6" onclick="dis('6')"/> </td2> 
+            <td2><input type="button" value="-" onclick="dis('-')"/> </td2> 
+         </tr2> 
+         <tr2> 
+            <td2><input type="button" value="7" onclick="dis('7')"/> </td2> 
+            <td2><input type="button" value="8" onclick="dis('8')"/> </td2> 
+            <td2><input type="button" value="9" onclick="dis('9')"/> </td2> 
+            <td2><input type="button" value="+" onclick="dis('+')"/> </td2>
+         </tr2> 
+         <tr2> 
+            <td2><input type="button" value="." onclick="dis('.')"/> </td2> 
+            <td2><input type="button" value="0" onclick="dis('0')"/> </td2> 
+            <td2><input type="button" value="=" onclick="solve()"/> </td2> 
+            <td2><input type="button" value="X" onclick="dis('*')"/> </td2> 
+         </tr2> 
+      </table2>
+	 <div id="gx">
+<svg id="gx-logo" class="tronFilter" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 400 400">
+<polyline class="draw" points="55.17 257.83 0.5 257.83 0.5 151.83 41.83 151.17 115.83 151.17 
+115.83 207.83 138.5 257.83 78.90 257.17 55.17 213.17 55.17 312.83 165.17 312.83 165.17 257.17 
+220.83 257.17 220.83 151.17 165.17 151.17 165.17 92.83 55.17 92.83 55.17 151.83"/>
+</svg>
+</div>
+  </div>
+</div>
+
+
+<div id="Weather" class="overlay">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeWeather()">&times;</a>
+	<div class="overlay-content">
+		<script src="https://www.yr.no/sted/Norge/Rogaland/Karmøy/Vormedal/ekstern_boks_liten.js"></script><noscript><a href="https://www.yr.no/sted/Norge/Rogaland/Karmøy/Vormedal/">yr.no: Værvarsel for Vormedal</a></noscript>
+	</div>
+</div>
+
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search" title="Søk">
+	<ul1 id="myUL">
+    	<li1><a title="Kontakt Simen" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:c496f1be-952b-4559-ab8d-1e8346c70295?ctx=chat">1. Simen <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Vetle" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:233914d6-cf54-40ec-8a76-219526dde836?ctx=chat">2. Vetle <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Amalie" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:015fc72b-2420-4237-8a02-9f8615f83364?ctx=chat">3. Amalie <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Oda" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:a200af14-cf65-47e5-b14c-9f598f5d84c2?ctx=chat">4. Oda <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Rebecca" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:4534fa83-b09a-4a4a-9c4e-02f76542377f?ctx=chat">5. Rebecca <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Daniel" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:2e9f5944-304b-4375-9ee8-7666ace06d65?ctx=chat">6. Daniel <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Eirik E" target="_blank" href="https://teams.microsoft.com/_#/conversations/19:0951ae91-5eb4-4664-b9b5-11683308179a_2cd8374a-ddfc-4599-87cd-5af9b293e7b3@unq.gbl.spaces?ctx=chat">7. Eirik E <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Pia" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:a81cad58-fb74-48c4-85a0-8d2addf74899?ctx=chat">8. Pia <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Lisell" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:854103f2-cca2-4a13-83fb-4bb8d854343f?ctx=chat">9. Lisell <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Mathias" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:e6e12a80-dec4-43a1-bf62-023c87dfba74?ctx=chat">10. Mathias <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Anna Martha" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:048dae4b-b8cb-4a25-8cc2-550e08b32711?ctx=chat">11. Anna Martha <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Tuva" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:fd618dcd-7266-4555-8bca-92507cd269ae?ctx=chat">12. Tuva <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Mats" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:dfc72ae7-73c3-497f-b3e7-c10b87f6fad2?ctx=chat">13. Mats <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Victor" target="_blank" href="https://teams.microsoft.com/_#/conversations/19:2cd8374a-ddfc-4599-87cd-5af9b293e7b3_3d59fb54-b267-4e58-b892-81d9b1fcbb08@unq.gbl.spaces?ctx=chat">14. Victor <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Leah" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:b733effd-a66e-448a-853e-2740051156f7?ctx=chat">15. Leah Athina <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Elias" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:2cb93cc6-22e1-4850-9389-ad7d2de96bb7?ctx=chat">16. Elias <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Rikke" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:86adc145-aef3-4ac4-9edc-f689fbdb21c2?ctx=chat">17. Rikke <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Sara" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:07a04ad9-2019-4813-9fd8-e4bad45e83d7?ctx=chat">18. Sara <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Michelle" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:d446356f-5c06-47b7-bbfe-9972b8f0c919?ctx=chat">19. Michelle <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Eirik S" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:50e3a01c-88a3-43ef-af0c-6a6c3de303f5?ctx=chat">20. Eirik S <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Thea" target="_blank" href="#">21. Thea <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Sonja" target="_blank" href="#">22. Sonja <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Bernt" target="_blank" href="https://teams.microsoft.com/_#/conversations/19:2cd8374a-ddfc-4599-87cd-5af9b293e7b3_b5a561dc-9a3a-4ec7-b507-5071fc22487c@unq.gbl.spaces?ctx=chat">23. Bernt Marius <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Marius" target="_blank" href="#">24. Marius <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Helene" target="_blank" href="#">25. Helene <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Erica" target="_blank" href="#">26. Erica <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Erling" target="_blank" href="https://teams.microsoft.com/_#/conversations/19:2cd8374a-ddfc-4599-87cd-5af9b293e7b3_a5197b89-2d7a-4396-bed5-61cee6dde374@unq.gbl.spaces?ctx=chat">27. Erling <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Nikolai" target="_blank" href="#">28. Nikolai <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Arvid" target="_blank" href="#">29. Arvid <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Emil" target="_blank" href="#">30. Emil <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Olav" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:3bb7dfdc-66f0-4bc2-80f0-efb0cc302877?ctx=chat">31. Olav <i class="fa fa-user"></i></a></li1>
+	</ul1>
+  </div>
+</div>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+  <button type="button" class="btn cancel" onclick="closeTP()"><i class="fa fa-window-close"></i></button>
+<table>  
+  <tr>
+	<th>Kl</th>
+    <th>Mandag</th>
+	<th>Tirsdag</th>
+	<th>Onsdag</th>
+	<th>Torsdag</th>
+	<th>Fredag</th>
+  </tr>
+  <tr>
+	<td>08.30</td>
+    <td>Kr.øving</td>
+	<td>Samf.fag</td>
+	<td>Norsk</td>
+	<td>Norsk</td>
+	<td>Fr.Språk</td>
+  </tr>
+  <tr>
+	<td>09.15</td>
+    <td>Engelsk</td>
+	<td>Kr.øving</td>
+	<td>Matte</td>
+	<td>Norsk</td>
+	<td>Fr.Språk</td>
+  </tr>
+  <tr>
+	<td>10.15</td>
+	<td>Norsk</td>
+	<td>Engelsk</td>
+	<td>AApen</td>
+	<td>AApen</td>
+	<td>Samf.fag</td>
+  </tr>
+  <tr>
+	<td>11.35</td>
+	<td>Utd.valg</td>
+	<td>Norsk</td>
+	<td>Matte</td>
+	<td>Engelsk</td>
+	<td>Krle</td>
+  </tr>
+  <tr>
+	<td>12.15</td>
+	<td>Matte</td>
+	<td>Matte</td>
+	<td>Naturfag</td>
+	<td>Valgfag</td>
+	<td>K & H</td>
+  </tr>
+  <tr>
+	<td>13.15</td>
+	<td>Naturfag</td>
+	<td>Matte</td>
+	<td>Fr. Språk</td>
+	<td>Valgfag</td>
+	<td>K & H</td>
+  </tr>
+</table>
+  </form>
+</div>
+
+
+<div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+<Block1></Block1>
+
+
+<div class="form-popupsettings" id="mySettings">
+  <form action="/action_page.php" class="form-containersettings">
+  <button type="button" class="btnsettings cancel" onclick="ySettings()">X</button>
+	<p class="Innstillinger">Innstillinger</p>
+		<p class="stext">RGB Mode</p>
+		<div class="center">
+			<input id="RGBism" onclick="RGBmode()" type="checkbox" name=""> [0]
+			<span>On</span>
+			<span>Off</span>
+		</div>
+		<section>
+			<div class="isometric"></div>
+		</section>
+	</form>
+</div>
+
+
+<div id="gx">
+<svg id="gx-logo" class="tronFilter" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 400 400">
+<polyline class="draw" points="55.17 257.83 0.5 257.83 0.5 151.83 41.83 151.17 115.83 151.17 
+115.83 207.83 138.5 257.83 78.90 257.17 55.17 213.17 55.17 312.83 165.17 312.83 165.17 257.17 
+220.83 257.17 220.83 151.17 165.17 151.17 165.17 92.83 55.17 92.83 55.17 151.83
+"/>
+</svg>
+</div>
+
+
+<div id="Map" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeMap()">&times;</a>
+  <div class="overlay-content">
+<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d522343.6260501257!2d5.026542791140137!3d59.242676367074544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s5.2459068%201217%2059.3549206!5e0!3m2!1sen!2sno!4v1575228588245!5m2!1sen!2sno" frameborder="0" id="Map" width="100%" height="450px" heightstyle="border: 1px solid #000; margin-left: 0px; margin-top: -400px; z-index: 0;" allowfullscreen=""></iframe>
+</div>
+</div>
+<canvas id="canvas" width="600" height="600"></canvas>
+
+
+
+
+<script>
+function test() {
+alert("TEst");
+}
+function openNav() {
+	document.getElementById("myNav").style.width = "30%";
+}
+function closeNav() {
+	document.getElementById("myNav").style.width = "0%";
+}
+
+function openTP() {
+  document.getElementById("myForm").style.display = "block";
+  this.classList.toggle("active");
+}
+function closeTP() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+function openHelp() {
+  document.getElementById("myHelp").style.display = "block";
+  document.getElementById("overlay").style.display = "block";
+  document.getElementById("myHelp").style.width = "100%";
+  this.classList.toggle("active");
+}
+function closeHelp() {
+  document.getElementById("myHelp").style.display = "none";
+  document.getElementById("overlay").style.display = "none";
+  document.getElementById("myHelp").style.width = "0%";
+}
+
+
+dragElement(document.getElementById("myForm"));
+dragElement(document.getElementById("myHelp"));
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    // if present, the header is where you move the DIV from:
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    // otherwise, move the DIV from anywhere inside the DIV:
+    elmnt.onmousedown = dragMouseDown;
+  }
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+
+function showTime(){
+    var date = new Date();
+    var h = date.getHours(); // 0 - 23
+    var m = date.getMinutes(); // 0 - 59
+    var s = date.getSeconds(); // 0 - 59
+	var d = date.getDate();
+    var session = "";
+    if(h == 0){
+        h = 12;
+    }
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    
+    var time = h + " : " + m + " : " + s + " " + session;
+    document.getElementById("MyClockDisplay").innerText = time;
+    document.getElementById("MyClockDisplay").textContent = time;
+    
+    setTimeout(showTime, 1000);
+    
+}
+showTime();
+
+
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li1");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+function openMap() {
+	document.getElementById("Map").style.width = "100%";
+}
+function closeMap() {
+	document.getElementById("Map").style.width = "0%";
+}
+function Toggle(x) {
+	x.classList.toggle("fa-thumbs-down");
+}
+function openWeather() {
+	document.getElementById("Weather").style.width = "15%";
+}
+function closeWeather() {
+	document.getElementById("Weather").style.width = "0%";
+}
+function dropdown() {
+document.getElementById("showDropdown").classList.toggle("show");
+}
+function dropdown1() {
+document.getElementById("showDropdown1").classList.toggle("show");
+}
+
+function openKalk() {
+	document.getElementById("myNav1").style.width = "20%";
+	document.getElementById("gx").style.display = "block";
+}
+function closeKalk() {
+	document.getElementById("myNav1").style.width = "0%";
+	document.getElementById("result").value = "" 
+	document.getElementById("gx").style.display = "none";
+}
+         function dis(val) 
+         { 
+             document.getElementById("result").value+=val 
+         }          function solve() 
+         { 
+             let x = document.getElementById("result").value 
+             let y = eval(x) 
+             document.getElementById("result").value = y 
+			 console.log(y);
+         } 
+         function clr() 
+         { 
+             document.getElementById("result").value = "" 
+         } 
+		 
+		 
+function RGBmode() {
+  var checkBox = document.getElementById("RGBism");
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+	var element = document.body;
+	element.classList.toggle("rgb-mode");
+	document.getElementById("HelpBtn").style.background="linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4)";
+	document.getElementById("Ul").style.background="linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4)";
+	document.getElementById("Ul").style.animation="text 18s linear infinite";
+	document.getElementById("Ul").style.WebkitAnimation = "text 18s linear infinite";
+	document.getElementById("Ul").style.BackgroundRepeat="no-repeat";
+    document.getElementById("Ul").style.backgroundSize="400%";
+ } else {
+	var element = document.body;
+    element.classList.remove("rgb-mode");
+	document.getElementById("HelpBtn").style.background="linear-gradient(0deg, #ddd, #fff)";
+	document.getElementById("Ul").style.animation="none";
+	document.getElementById("Ul").style.background="#333";
+  }
+}
+
+
+function DarkMode() {
+	var element = document.body;
+	element.classList.toggle("dark-mode");
+}
+
+function Settings() {
+	document.getElementById("mySettings").style.display = "block";
+	document.getElementById("Weather").style.width = "0%";
+	document.getElementById("myNav1").style.width = "0%";
+}
+function ySettings() {
+    document.getElementById("mySettings").style.display = "none";
+}
+</script>
+</body>
+</html>

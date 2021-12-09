@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  display: inline-block;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: 'e svett';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -40px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 90px;
+}
+.button:hover {background: linear-gradient(to bottom right, #FF0000, #FF4000, #FF8000, #FFbf00, #BFFF00, #80FF00, #40FF00, #00FF00, #00FF40, #00FF80, #00FFBF, #00FFFF, #00BFFF, #0080FF, #0040FF, #0000FF, #4000FF, #8000FF, #BF00FF, #FF00FF, #FF00BF, #FF0080, #FF0040, #FF0000);}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(8px);
+}
+
+.button1 {border-radius: 2px;}
+
+
+
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  display: inline-block;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: 'e svett';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -40px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 90px;
+}
+.button:hover {background: linear-gradient(to bottom right, #FF0000, #FF4000, #FF8000, #FFbf00, #BFFF00, #80FF00, #40FF00, #00FF00, #00FF40, #00FF80, #00FFBF, #00FFFF, #00BFFF, #0080FF, #0040FF, #0000FF, #4000FF, #8000FF, #BF00FF, #FF00FF, #FF00BF, #FF0080, #FF0040, #FF0000);}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(8px);
+}
+
+.button2 {border-radius: 8px;}
+</style>
+</head>
+<body>
+
+<h2>Test</h2>
+
+<button onclick= "getElementById('demo').innerHTML = Date()" class="button"><span>Victor </span></button>
+<p id="demo"></p>
+
+
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+    "list": "I python saa kan en liste se slik ut:\ntest = ['1', '2', '3']\nLister kan vaere nyttige til aa lagre flere informasjoner",
+    "integer": "En integer er et helt nummer",
+    "variabel": "En variabel i Python settes opp slik:\ntest = 5",
+    "float": "En float er et tall med desimaler",
+    "operator": "Python har en rekke operatorer.\nHer er: noen eksempler:\n",
+    "string": "En string i Python settes opp slik:\ntest = 'test'"
+}

@@ -1,0 +1,1 @@
+Det mest intresante jeg har lært i python er GUI.

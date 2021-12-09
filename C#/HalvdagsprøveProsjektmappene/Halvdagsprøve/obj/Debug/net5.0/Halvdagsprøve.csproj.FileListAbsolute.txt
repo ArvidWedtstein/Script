@@ -1,0 +1,16 @@
+C:\Users\ArvidWedtstein\Documents\VG2\Script\C#\Halvdagsprøve\obj\Debug\net5.0\Halvdagsprøve.csproj.AssemblyReference.cache
+C:\Users\ArvidWedtstein\Documents\VG2\Script\C#\Halvdagsprøve\obj\Debug\net5.0\Halvdagsprøve.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ArvidWedtstein\Documents\VG2\Script\C#\Halvdagsprøve\obj\Debug\net5.0\Halvdagsprøve.AssemblyInfoInputs.cache
+C:\Users\ArvidWedtstein\Documents\VG2\Script\C#\Halvdagsprøve\obj\Debug\net5.0\Halvdagsprøve.AssemblyInfo.cs
+C:\Users\ArvidWedtstein\Documents\VG2\Script\C#\Halvdagsprøve\obj\Debug\net5.0\Halvdagsprøve.csproj.CoreCompileInputs.cache
+C:\Users\ArvidWedtstein\Documents\VG2\Script\C#\Halvdagsprøve\bin\Debug\net5.0\Halvdagsprøve.exe
+C:\Users\ArvidWedtstein\Documents\VG2\Script\C#\Halvdagsprøve\bin\Debug\net5.0\Halvdagsprøve.deps.json
+C:\Users\ArvidWedtstein\Documents\VG2\Script\C#\Halvdagsprøve\bin\Debug\net5.0\Halvdagsprøve.runtimeconfig.json
+C:\Users\ArvidWedtstein\Documents\VG2\Script\C#\Halvdagsprøve\bin\Debug\net5.0\Halvdagsprøve.runtimeconfig.dev.json
+C:\Users\ArvidWedtstein\Documents\VG2\Script\C#\Halvdagsprøve\bin\Debug\net5.0\Halvdagsprøve.dll
+C:\Users\ArvidWedtstein\Documents\VG2\Script\C#\Halvdagsprøve\bin\Debug\net5.0\ref\Halvdagsprøve.dll
+C:\Users\ArvidWedtstein\Documents\VG2\Script\C#\Halvdagsprøve\bin\Debug\net5.0\Halvdagsprøve.pdb
+C:\Users\ArvidWedtstein\Documents\VG2\Script\C#\Halvdagsprøve\obj\Debug\net5.0\Halvdagsprøve.dll
+C:\Users\ArvidWedtstein\Documents\VG2\Script\C#\Halvdagsprøve\obj\Debug\net5.0\ref\Halvdagsprøve.dll
+C:\Users\ArvidWedtstein\Documents\VG2\Script\C#\Halvdagsprøve\obj\Debug\net5.0\Halvdagsprøve.pdb
+C:\Users\ArvidWedtstein\Documents\VG2\Script\C#\Halvdagsprøve\obj\Debug\net5.0\Halvdagsprøve.genruntimeconfig.cache

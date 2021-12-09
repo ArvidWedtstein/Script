@@ -1,0 +1,18 @@
+
+	{
+	"=": "= - Er lik. \nEksempel: x + y = xy",
+	"+": "+ - Addisjon. \nEksempel: x + y",
+	"-": "'-' - Subtraksjon. \nEksempel: x - y",
+	"*": "* - Multiplikasjon. \nEksempel: x * y",
+	"/": "/ - Divisjon. \nEksempel: x / y",
+	"+=": "+= - Eksempel: x += 3. \nSamme som: x = x + 3",
+	"-=": "-= -Eksempel: x -= 3. \nSamme som: x = x - 3",
+	"*=": "*= - Eksempel: x *= 3. \nSamme som: x = x * 3",
+	"/=": "/= - Eksempel: x /= 3. \nSamme som: x = x / 3",
+	"==": "== - Er lik.",
+	"!=": "!= - Er ikke lik.",
+	">": "> - Mer enn",
+	"<": "< - Mindre enn",
+	">=": ">= - Mer enn eller lik",
+	"<=": "<= - Mindre enn eller lik"
+	}

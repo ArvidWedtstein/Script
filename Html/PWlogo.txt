@@ -1,0 +1,5 @@
+<svg id="gx-logo" class="tronFilter" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 400 400">
+<polyline class="draw" points="0.83 30.83 20.83 80.83 40.83 30.83 32.83 50.83 20.83 30.83 40.83 80.83 
+60.83 30.83 40.83 80.83 32.83 50.83 32.83 85.83 32.83 0.83 40.83 0.83 50.83 5.83 50.83 15.83 40.83 20.83 32.83 20.83
+" style="fill: none;stroke: #000000;stroke-miterlimit: 10;stroke-width: 4;"/>
+</svg>

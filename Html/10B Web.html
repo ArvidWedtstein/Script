@@ -1,0 +1,2325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://kit.fontawesome.com/05375b3fb2.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Turret Road' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Tillana' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Frijole' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Ewert' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css?family=Caesar Dressing" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cabin Sketch" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=New Rocker' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Akronim' rel='stylesheet'>
+<link rel = "icon" href="https://i.kym-cdn.com/photos/images/newsfeed/001/622/136/7be.png"<type = "image/x-icon">
+<title>10B nettside</title>
+<style>
+body {
+	overflow: hidden;
+	background: url(https://www.karmoy.kommune.no/content/uploads/sites/19/2018/10/logo-vor-e1540462346894-2048x500.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 110% 75%;
+	width: 100%;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+.rgb-mode {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab );
+	background-size: 400% 200%;
+	animation: gradientBG 10s ease infinite;
+	color: #ffffff;
+}
+.frme1 {
+	background: red;
+}
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.head {
+  position: absolute;
+  width: 100vw;
+  font-family: Tillana;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  top: -18px;
+  z-index: 3;
+  background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #000, #000, #000, #000, #000, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: text 8s linear infinite;
+  -webkit-animation: text 8s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(225, 225, 225, 0.2);
+}
+#snackbar {
+	visibility: hidden;
+	min-width: 500px;
+	min-height: 500px;
+	margin-left: 20%;
+	background: url(https://cdn.discordapp.com/attachments/553322925395017732/715518500361469992/Screenshot_2020-05-21-10-03-11-1.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	text-align: center;
+	border-radius: 2px;
+	position: fixed;
+	z-index: 1;
+	bottom: 0px;
+  font-size: 17px;
+}
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.7s;
+  animation: fadein 0.5s, fadeout 0.5s 2.7s;
+}
+@-webkit-keyframes fadein {
+  from {bottom: -30px; opacity: 0.5;} 
+  to {bottom: 0px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {left: -50%; bottom: -30px; opacity: 0.5;}
+  to {left: 0%; bottom: 0px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 0px; opacity: 1;} 
+  to {bottom: -30px; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 0px; opacity: 1;}
+  to {bottom: -30px; opacity: 0;}
+}
+@keyframes text {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+box {
+  position: absolute;
+  width: 100%;
+  height: 7%;
+  padding: 20px;
+  top: 0;
+  z-index: 3;
+  left: 0;
+  cursor: pointer;
+  background: linear-gradient(to top, #333, #000);
+  box-shadow: 0 0 0 1px #353535, 0 0 0 1px #3e3e3e, inset 0 0 10px
+		rgba(0,0,0,1), 0 1px 20px rgba(0,0,0,.5), inset 0 0 15px rgba(0,0,0,.2);
+}
+@keyframes mymove {
+	0% 
+	{
+		margin-left: 0px;
+	}
+	50% 
+	{
+		margin-left: 1170px;
+	}
+	100% 
+	{
+		margin-left: 0px;
+	}
+}
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 400px) {
+  .dropdown-content, .dropdown-content1 {
+    float: none;
+    width: 100%;
+  }
+}
+
+table, th, td {
+  border: 2px solid black;
+  background: white;
+  top: 5px;
+  left: 0px;
+  position: relative;
+  margin-left: 0px;
+}
+table {
+	border-collapse: collapse;
+}
+td {
+	width: 160px;
+	top: 0px;
+	height: 20px;
+	text-align: center;
+	background-color: #fff;
+	color: #000;
+}
+th { 
+	text-align: center;
+	font-family: New Rocker;
+	top: 0px;
+	border-collapse: collapse;
+	background-color: #000;
+	color: white;
+}
+td:hover {
+  animation: animate 8s linear infinite;
+  filter: blur;
+  color: #000;
+}
+td:before {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 10;
+	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+	background-size: 400%;
+	opacity: 0;
+	transition: 0.3s;
+}
+td:hover:before {
+	filter: blur(25px);
+	opacity: 1;
+}
+@keyframes animate {
+	0%
+	{
+		background-position: 0%;
+	}
+	100%
+	{
+		background-position: 400%;
+	}
+}
+
+
+ul {
+  list-style-type: none;
+  margin-top: 81px;
+  margin-left: -8px;
+  width: 100%;
+  padding: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  overflow: hidden;
+  background-color: #333;
+  transform-origin: top;
+}
+li {
+  float: left;
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-bottom: 3px solid #333;
+  transition: all 0.3s ease 0s, visibility 0s linear 0.5s;
+}
+li a:hover, .dropdown:hover .dropbtn {
+  border-bottom: 3px solid #ff0000;
+  transition-delay: 0s;
+  -webkit-transition: all 0.3s ease;
+    	-moz-transition: all 0.3s ease;
+   	 -o-transition: all 0.3s ease;
+  	 -ms-transition: all 0.3s ease;
+    	transition: all 0.3s ease;
+}
+li.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+  z-index: 10;
+  background: rgba(0,0,0,0.8);
+  margin: 0;
+}
+.dropdown-content a {
+  color: white;
+  padding: 8px 14px;
+  text-decoration: none;
+  display: block;
+  transition: all 0.1s ease-in-out 0s, visibility 0s linear 0.2s, z-index 0s linear 0.01s;
+  text-align: left;
+  cursor: help;
+}
+.dropdown .show {display: block;}
+.dropdown-content a:hover {background-color: rgba(255,0,0,0.5);}
+.dropdown:hover .dropdown-content {
+  display: block;
+  z-index: 1;
+  animation: slide 0.3s;
+}
+@keyframes slide {
+	from 
+	{
+	z-index: -50;
+	margin-top: -400px;
+	filter: blur(15px);
+	}
+	to
+	{
+	z-index: 1;
+	margin-top: 0px;
+	}
+}
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  background: rgba(0,0,0,0.8);
+  margin: 0;
+  transform-origin: top;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+}
+.dropdown-content1 a {
+  color: white;
+  padding: 7px 14px;
+  text-decoration: none;
+  display: block;
+  transition: all 0.1s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  text-align: left;
+}
+.dropdown-content1 a:hover {background-color: rgba(0,255,255,0.5);
+border-bottom: 3px solid aqua;}
+.dropdown:hover .dropdown-content1 {
+  display: block;
+  animation: slide 0.2s;
+  z-index: 1;
+  transform-origin: top;
+}
+a { 
+	font-family: tahoma;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.7);
+  overflow-x: hidden;
+  overflow: auto;
+  transition: 0.5s;
+}
+.overlay-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  transition: 0.5s;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.overlay a:hover {
+  color: #00e1ff;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  font-size: 60px;
+}
+
+.clock {
+    position: fixed;
+    top: 3.6%;
+    left: 70vw;
+    transform: translateX(-50%) translateY(-50%);
+    color: #ffffff;
+    font-size: 2.8vw;
+    font-family: Turret Road;
+	mix-blend-mode: screen;
+	z-index: 4;
+    letter-spacing: 7px;
+	flex-direction: column;
+	border-radius: 5px;
+	background: none;
+	transition: 0.1s;
+	transform: perspective(1000px);
+	cursor: none;
+}
+.clock:hover {
+	color: #00e1ff;
+	box-shadow: 0 2px 5px rgba(0,255,255,0.3);
+	transition: .8s ease-in-out;
+	transform: scale(1.1);
+	animation: clockrgb 2s linear infinite;
+}
+@keyframes clockrgb {
+	0%{filter: hue-rotate(0deg);}
+	100%{filter: hue-rotate(360deg);}
+}
+.help {
+	position: fixed;
+	height: 35px;
+	width: 35px;
+	background: linear-gradient(0deg, #ddd, #fff);
+	z-index: 4;
+	border-radius: 50%;
+	text-align: center;
+	margin-top: -4.5%;
+	margin-left: 93%;
+	padding: 2px;
+	text-decoration: none;
+	box-sizing: border-box;
+	transition: .5s;
+	box-shadow: 0 10px 15px rgba(255,255,255,0.1);
+	outline: none;
+	border: none;
+}
+.help .fa {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: linear-gradient(0deg, #ddd, #fff);
+	border-radius: 50%;
+	color: #262626;
+	transition: .5s;
+	line-height: 29px;
+	font-size: 20px;
+}
+.help:hover {
+	box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px
+	rgba(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), inset 0 0 15px rgba(0,0,0,.2);
+}
+.helpRGB {
+	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+	background-size: 400%;
+	box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px
+	rgba(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), inset 0 0 15px rgba(0,0,0,.2);
+	animation: animate 8s linear infinite;
+	filter: blur;
+}
+.help-popup {
+  display: none;
+  position: fixed;
+  width: 40%;
+  height: 280px;
+  left: 20%;
+  bottom: 20%;
+  background: linear-gradient(to top, #333, #000);
+  border: 3px solid #000000;
+  border-radius: 3px;
+  z-index: 2;
+  cursor: -webkit-grab; cursor: grab;
+  animation: visible 0.6s ease-in-out;
+}
+.helpbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 5px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  margin-right: 0;
+  font-size: 20px;
+  float: right;
+  opacity: 0.8;
+  border-radius: 3px;
+  outline: none;
+  position: relative;
+}
+.cancel {
+background: transparent;
+color: #ffffff;
+outline: none;
+margin-top: -10%;
+margin-left: 95%;
+}
+profile1 {
+	width: 120px;
+	margin-left: 50%;
+	margin-top: -7%;
+	height: 15px;
+	color: #ffffff;
+	z-index: 5;
+	font-size: 30px;
+	position: absolute;
+	border-radius: 5px;
+	text-align: center;
+	padding: 6px;
+	font-family: Cabin Sketch;
+	transform: translate(-50%,-50%);
+	justify-content: center;
+	align-items: center;
+}
+.flip-card {
+  margin-top: 10%;
+  margin-left: 10%;
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+  position: relative;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 10px 5px #000000;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(-180deg) translateZ(50px);
+  box-shadow: 0px 0px 20px 5px #ff0000;
+  animation: glow 3s infinite;
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color: #000;
+  color: red;
+}
+.flip-card-back {
+  background: linear-gradient(to top, #333, #000);
+  color: white;
+  transform: rotateY(180deg);
+}
+@keyframes glow {
+	0%
+	{
+		box-shadow: 0px 0px 20px 5px #ff0000;
+	}
+	50%
+	{
+		box-shadow: 0px 0px 20px 15px #ff0000;
+	}
+	100%
+	{
+		box-shadow: 0px 0px 20px 5px #ff0000;
+	}
+}
+.flip-card2 {
+  margin-top: -39%;
+  margin-left: 55%;
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+}
+.flip-card-inner2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 10px 5px #000000;
+}
+.flip-card2:hover .flip-card-inner2 {
+  transform: rotateY(180deg) translateZ(50px);
+  box-shadow: 0px 0px 20px 5px #ff0000;
+  animation: glow 3s infinite;
+}
+.flip-card-front2, .flip-card-back2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-card-front2 {
+  background-color: #000;
+  color: red;
+}
+.flip-card-back2 {
+  background: linear-gradient(to top, #333, #000);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+#myInput {
+  background-position: 10px 12px;
+  position: relative;
+  background-repeat: no-repeat;
+  width: 50%;
+  padding: 8px;
+  margin-bottom: 22px;
+  color: #ffffff;
+  border-radius: 20px;
+  caret-color: red;
+  font-family: "Franklin Gothic Medium";
+  background: linear-gradient(0deg, #333, #000);
+  border: 1px black;
+  outline: none;
+  box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px
+		rgba(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), inset 0 0 15px rgba(0,0,0,.2);
+}
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#myUL li1 a {
+  padding: 8px;
+  margin: 8px;
+  font-family: "Franklin Gothic Medium";
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  float: center;
+  transition: 0.3s;
+}
+#myUL li1 a:hover:not(.header) {
+  background-color: rgba(255,255,255,0.1);
+  transform: scale(1.1) translateX(20px);
+  color: #ffffff;
+  overflow-x: hidden;
+}
+#inputtext {display:none;color:red}
+input[type="button"] 
+{ 
+    background: linear-gradient(0deg, #ddd, #fff);
+    color: black; 
+    border: solid black 0.5px; 
+    width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	font-size: 20px;
+	transition: 0.1s;
+	font-family: "Syncopate";
+	margin: 0.5px;
+	margin-left: -2px;
+	position: relative;
+} 
+input[type="button"]:hover
+{
+	color: white;
+	background: linear-gradient(to top, #333, #000);
+	outline: none;
+}
+input[type="text"] 
+{ 
+    background: linear-gradient(0deg, #ddd, #fff);
+    border: solid black 0.5px; 
+    width: 133px; 
+	font-size: 25px;
+	padding: 5px;
+	margin: 5px;
+	outline: none;
+} 
+svg
+{
+	position: relative;
+	margin-left: 20%;
+	margin-top: -50px;
+}
+svg .draw
+{
+	stroke: #ffffff;
+	fill: rgba(0,0,0,0);
+	stroke-width: 10px;
+	stroke-dasharray: 3200;
+	stroke-dashoffset: 3200;
+	stroke-linejoin: bevel;
+	animation: drawline 15s infinite;
+	animation-direction: alternate;	
+}
+@keyframes drawline 
+{
+	to 
+	{
+		stroke-dashoffset: 0;
+	}
+}
+#gx {background-size:contain; padding:10% 0; text-align:center; width:100%; height:auto; display: none;}
+#gx-logo {animation:tronFilter 5s infinite; 
+    fill:#000000; stroke:#666; stroke-width:10; stroke-linejoin:bevel;}
+@keyframes tronFilter {
+    0% {-webkit-filter: drop-shadow( -.75px 0px 6px #31eefd);
+                filter: drop-shadow( -.75px 0px 6px #31eefd ); stroke:#31eefd;} 
+   22% {-webkit-filter: drop-shadow( -.75px 0px 6px #1d85bb );
+                filter: drop-shadow( -.75px 0px 6px #1d85bb ); stroke:#1d85bb;} /* end blue */  
+    
+   42% {-webkit-filter: drop-shadow( -.75px 0px 6px #884173 );
+                filter: drop-shadow( -.75px 0px 6px #884173 ); stroke:#884173;}
+   62% {-webkit-filter: drop-shadow( -.75px 0px 6px #ff0071 );
+                filter: drop-shadow( -.75px 0px 6px #ff0071 ); stroke:#ff0071;} /* end magenta */  
+   82% {-webkit-filter: drop-shadow( -.75px 0px 6px #009997 );
+                filter: drop-shadow( -.75px 0px 6px #009997 ); stroke:#009997;}
+   92% {-webkit-filter: drop-shadow( -.75px 0px 6px #92ffd7 );
+                filter: drop-shadow( -.75px 0px 6px #92ffd7 ); stroke:#92ffd7;} /* end green */      
+  100% {-webkit-filter: drop-shadow( -.75px 0px 6px #31eefd );
+                filter: drop-shadow( -.75px 0px 6px #31eefd ); stroke:#31eefd;} 
+}
+
+#map {
+	width: 100%;
+	height: 90%;
+	margin-left: -100px;
+	display: none;
+}
+@-webkit-keyframes fire 
+{
+0%{text-shadow:   0 0 2px white, 0 -5px 4px #ff3,    2px -10px 6px #fd3, -2px -15px 11px #f80, -2px -25px 18px #f20;}
+25%{text-shadow:  0 0 3px white, 1px -6px 5px #ff3,  1px -11px 7px #fd3, -2px -16px 13px #f80, -0px -26px 20px #f20;}  
+50%{text-shadow:  0 0 3px white, -1px -4px 6px #ff3, 0px -12px 6px #fd3, -3px -16px 15px #f80, -1px -28px 22px #f20;}
+75%{text-shadow:  0 0 2px white, 1px -7px 4px #ff3,  1px -11px 8px #fd3, -1px -14px 12px #f80, -2px -25px 21px #f20;}
+100%{text-shadow: 0 0 2px white, 0 -5px 4px #ff3,    2px -10px 6px #fd3, -2px -15px 11px #f80, -2px -25px 18px #f20;}
+}
+
+
+.form-popupsettings {
+  display: none;
+  position: fixed;
+  width: 90%;
+  height: 300px;
+  transform: translate(-50%, -50%);
+  margin-top: 300px;
+  margin-left: 1200px;
+  left: 1%;
+  z-index: 9;
+}
+@keyframes visible {
+	from {
+	opacity: 0;
+	}
+	to {
+	opacity: 1;
+	}
+}
+@keyframes visible2 {
+	from {
+	opacity: 1;
+	display: block;
+	}
+	to {
+	opacity: 0;
+	display: none;
+	}
+}
+.form-containersettings {
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%,-50%);
+  padding: 0px;
+  background: linear-gradient(to top, #333, #000);
+}
+.btnsettings {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 7px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  float: right;
+  opacity: 0.8;
+  border-radius: 3px;
+  margin-top: 25px;
+  margin-right: 0px;
+  outline: none;
+  transform: translate(-50%,-50%);
+}
+.cancel {
+background: red;
+}
+.Innstillinger {
+	font-family: Tahoma;
+	position: fixed;
+	font-size: 2vw;
+	margin-top: 0%;
+	margin-left: 37%;
+	z-index: 10;
+	color: #ffffff;
+	text-decoration: underline;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	text-align: center;
+	justify-content: center;
+	-webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+}
+.stext {
+	position: fixed;
+	position: absolute;
+	font-family: Allerta Stencil;
+	font-size: 30px;
+	margin-left: 120px;
+	margin-top: 130px;
+	text-align: center;
+	color: #ffffff;
+	-webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+}
+.ntext {
+	position: fixed;
+	position: absolute;
+	font-family: Allerta Stencil;
+	font-size: 30px;
+	margin-left: 120px;
+	margin-top: 190px;
+	text-align: center;
+	color: #ffffff;
+	-webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+}
+.center {
+	overflow: hidden;
+	position: fixed;
+	top: 50%;
+	left: 5%;
+	transform: translate(-50%,-50%);
+	transform-style: preserve-3d;
+	font-family: tillana;
+	perspective: 200px;
+	height: 40px;
+	width: 100px;
+	border-radius: 40px;
+	box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px
+	rgba(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), inset 0 0 15px rgba(0,0,0,.2);
+}
+.center2 {
+	overflow: hidden;
+	position: fixed;
+	top: 70%;
+	left: 5%;
+	transform: translate(-50%,-50%);
+	transform-style: preserve-3d;
+	font-family: tillana;
+	perspective: 200px;
+	height: 40px;
+	width: 100px;
+	color: black;
+	border-radius: 40px;
+	box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px
+	rgba(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), inset 0 0 15px rgba(0,0,0,.2);
+}
+input[type="checkbox"] {
+	position: relative;
+	width: 100px;
+	height: 40px;
+	margin: 0;
+	-webkit-appearance: none;
+	z-index: 10;
+	outline: none;
+	transition: 0.5s;
+	color: black;
+	cursor: pointer;
+}
+.span {
+	position: absolute;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	line-height: 40px;
+	height: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	pointer-events: none;
+	color: #000;
+	transform-style: preserve-3d;
+	perspective: 200px;
+}
+.span:nth-child(2)
+{
+	left: 0;
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px;
+	background: #0f0;
+}
+.span:nth-child(2):before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg,#f00,#de0808);
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px;
+	transform-origin: right;
+	transition: 1s;
+	backface-visibility: hidden;
+}	
+input[type="checkbox"]:checked ~ span:nth-child(2):before {
+	transform: rotateY(180deg);
+}
+.span:nth-child(3)
+{
+	right: 0;
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+	background: #f00;
+}
+.span:nth-child(3):before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg,#0cd20c,#0f0);
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+	transform-origin: left;
+	transition: 1s;
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+}	
+input[type="checkbox"]:checked ~ span:nth-child(3):before {
+	transform: rotateY(360deg);
+}
+@keyframes RGBmode {
+	0%
+	{
+		background-position: 0%;
+	}
+	100%
+	{
+		background-position: 400%;
+	}
+}
+section {
+	width: 100%;
+	height: 100vh;
+}
+.isometric {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background: url(https://thumbs.gfycat.com/MiserableAmusedHarvestmen-size_restricted.gif);
+	background-size: cover;
+	background-position: 50% 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) rotateX(45deg) rotateZ(-45deg);
+	transform-style: preserve-3d;
+	transition: 0.5s;
+	animation: glowRGB 2s infinite;
+	
+}
+@keyframes glowRGB {
+	0%{box-shadow: -10px 10px 20px rgba(0,0,0,0.8), -20px 20px 80px rgba(255,0,0,1);}
+	20%{box-shadow: -10px 10px 20px rgba(0,0,0,0.8), -20px 20px 60px rgba(255,0,0,1);}
+	40%{box-shadow: -10px 10px 20px rgba(0,0,0,0.8), -20px 20px 50px rgba(255,0,0,1);}
+	60%{box-shadow: -10px 10px 20px rgba(0,0,0,0.8), -20px 20px 40px rgba(255,0,0,1);}
+	80%{box-shadow: -10px 10px 20px rgba(0,0,0,0.8), -20px 20px 60px rgba(255,0,0,1);}
+	100%{box-shadow: -10px 10px 20px rgba(0,0,0,0.8), -20px 20px 80px rgba(255,0,0,1);}
+}
+.isometric:hover {
+	transform: translate(-50%,-50%) rotateX(0deg) rotateZ(0deg);
+	box-shadow: 0 20px 20px rgba(0,0,0,0.5);
+	transition: 0.5s;
+	animation: none;
+}
+.isometric:before {
+	content: '';
+	width: 100%;
+	height: 10px;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background: linear-gradient(#1b1b1b, #ce0000);
+	transform-origin: top;
+	transform: skewX(-45deg) scaleY(1);
+	transition: 0.5s;
+	animation: glow2RGB 10s infinite;
+}
+.isometric:hover:before {
+	transform: skewX(-45deg) scaleY(0);
+}
+.isometric:after {
+	content: '';
+	width: 10px;
+	height: 100%;
+	position: absolute;
+	left: -10px;
+	top: 10px;
+	background: linear-gradient(to left, #1b1b1b, #ce0000);
+	transform-origin: left;
+	transform: skewY(-45deg) scaleX(1);
+	transition: 0.5s;
+	animation: glow3RGB 10s infinite;
+}
+.isometric:hover:after {
+	left: 0px;
+	top: 0px;
+	transform: skewY(-45deg) scaleX(0);
+}
+
+
+.loader {
+	position: fixed;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	margin-top: -125.5px;
+	margin-left: 1189px;
+	transform: translate(-50%,-50%);
+	z-index: 5;
+	border: none;
+	outline: none;
+	color: #ffffff;
+	background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);
+	animation: rgbcircle 2s linear infinite;
+	box-shadow: 0 0 0 2px #353535, 0 0 0 3px #3e3e3e, 0 0 4px
+	rgba(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), 0 0 15px rgba(0,0,0,.2);
+	column-fill: auto;
+}
+.loader:hover {
+	transition: 0.3s;
+	background: rgba(255,255,255,0.1);
+	animation: rgbcircle 2s linear infinite;
+	filter: hue-rotate(360deg);
+}
+@keyframes rgbcircle {
+	0%
+	{
+		transform: rotate(0deg);
+		filter: hue-rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(360deg);
+		filter: hue-rotate(360deg);
+	}
+}
+.loader:before {
+	content: "";
+	position: fixed;
+	top: 2px;
+	left: 2px;
+	right: 2px;
+	bottom: 2px;
+	border-radius: 50%;
+	background: rgba(0,0,0,0);
+	z-index: 1;
+	transition: 0.3s;
+}
+.loader:hover:before {
+	top: 4px;
+	left: 4px;
+	right: 4px;
+	bottom: 4px;
+}
+.loader:after {
+	content: "";
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	border-radius: 50%;
+	background: linear-gradient(45deg, transparent 40%, #e5f403);
+	z-index: 1;
+	filter: blur(30px);
+}
+.smoke {
+	height: 100vh;
+	background: transparent;
+}
+.smoketext {
+	position: absolute;
+	top: 3%;
+	margin-left: 32%;
+	text-align: center;
+	transform: translateY(-50%);
+	font-size: 2em;
+	letter-spacing: 0.1em;
+	font-family: montserrat;
+	color: #ffffff;
+	background: transparent;
+	-webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+}
+.smoketext .spansmoke {
+	opacity: 0;
+	display: inline-block;
+	animation: smoke 1.5s linear forwards;
+}
+@keyframes smoke {
+	0%{
+	opacity: 0;
+	transform: rotateY(90deg);
+	filter: blur(10px);}
+	100%{
+	opacity: 1;
+	transform: rotateY(0deg);
+	filter: blur(0);}
+}
+.Maksimer {
+	padding: 8px;
+	margin: 2px;
+	background: none;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: 0.3s;
+	border: 0.5px #ffffff solid;
+	border-radius: 5px;
+	text-align: center;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+.Maksimer:hover {
+	background: none;
+	color: #ffffff;
+	border: none;
+	transition: 0.3;
+	box-shadow: 0 0 10px #b80000, 0 0 3px #d90000, 0 0 5px #e00000, 0 0 8px #ff0000;
+	text-shadow:0 0 10px #b80000, 0 0 3px #d90000, 0 0 5px #e00000, 0 0 8px #ff0000;
+	transform: scale(0.9);
+}
+.Maksimer:active {
+	transform: translateY(2px);
+}
+.Minimer {
+	padding: 8px;
+	margin: 2px;
+	background: none;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: 0.3s;
+	border: 0.5px #ffffff solid;
+	border-radius: 5px;
+	text-align: center;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+.Minimer:hover {
+	background: none;
+	color: #ffffff;
+	border: none;
+	transition: 0.3;
+	box-shadow: 0 0 1px #b80000, 0 0 3px #d90000, 0 0 2px #e00000, 0 0 5px #ff0000;
+	text-shadow:0 0 10px #b80000, 0 0 3px #d90000, 0 0 5px #e00000, 0 0 8px #ff0000;
+	transform: scale(0.9);
+}
+.Minimer:active {
+	transform: translateY(2px);
+}
+.line {
+	background: #ffffff;
+	position: absolute;
+	height: 2px;
+	width: 0%;
+	align-items: center;
+	float: center;
+	border-radius: 50%;
+	margin-top: 53px;
+	margin-left: 48%;
+	animation: extendline 2s linear forwards;
+	-webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+}
+@keyframes extendline {
+	0%{
+	width: 0px;
+	margin-left: 48%
+	}
+	100%{
+	width: 500px; 
+	margin-left: 29%;
+	box-shadow: 0 0 5px 1px #03e9f4, 0 0 2px 1px #03e9f4, 0 0 5px 1px #03e9f4, 0 0 2px 1px #03e9f4;
+	}
+}
+.print {
+	padding: 8px;
+	margin: 2px;
+	background: none;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: 0.3s;
+	border: 0.5px #ffffff solid;
+	border-radius: 5px;
+	text-align: center;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+.print:hover {
+	background: none;
+	color: #ffffff;
+	border: none;
+	transition: 0.3;
+	box-shadow: 0 0 10px #b80000, 0 0 3px #d90000, 0 0 5px #e00000, 0 0 8px #ff0000;
+	text-shadow:0 0 10px #b80000, 0 0 3px #d90000, 0 0 5px #e00000, 0 0 8px #ff0000;
+	transform: scale(0.9);
+}
+.print:active {
+	transform: translateY(2px);
+}
+.SettingsMenu {
+	display: inline-block;
+	position: absolute;
+	margin-left: 1000px;
+	margin-top: 200px;
+	background: none;
+	padding: 12px;
+	overflow: hidden;
+	list-style-type: none;
+	justify-content: center;
+	-webkit-box-reflect: below 0.01px linear-gradient(transparent, #0005);
+	text-rendering: optimizelegibility;
+}
+.SettingsMenu span {
+	position: absolute;
+	display: block;
+	overflow: hidden;
+}
+.SettingsMenu span:nth-child(1) {
+	top: 0;
+	left: -100%;
+	border-left-radius: 50%;
+	width: 100%;
+	height: 3px;
+	background: linear-gradient(90deg, transparent, #03e9f4);
+	animation: NeonBtn1 2s linear infinite;
+}
+.SettingsMenu span:nth-child(2) {
+	top: -100%;
+	right: 0;
+	border-left-radius: 50%;
+	width: 3px;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #03e9f4);
+	animation: NeonBtn2 2s linear infinite;
+	animation-delay: 0.50s;
+}
+.SettingsMenu span:nth-child(3) {
+	bottom: 0;
+	right: -100%;
+	border-left-radius: 50%;
+	width: 100%;
+	height: 3px;
+	background: linear-gradient(270deg, transparent, #03e9f4);
+	animation: NeonBtn3 2s linear infinite;
+	animation-delay: 1s;
+}
+.SettingsMenu span:nth-child(4) {
+	bottom: -100%;
+	left: 0;
+	border-left-radius: 50%;
+	width: 3px;
+	height: 100%;
+	background: linear-gradient(360deg, transparent, #03e9f4);
+	animation: NeonBtn4 2s linear infinite;
+	animation-delay: 1.50s;
+}
+@keyframes NeonBtn1 {
+	0% {left: -100%;
+		filter: hue-rotate(0deg);}
+	50%,100% {left: 100%;
+			  filter: hue-rotate(90deg);}
+}
+@keyframes NeonBtn2 {
+	0% {top: -100%;
+		filter: hue-rotate(90deg);}
+	50%,100% {top: 100%;
+			  filter: hue-rotate(180deg);}
+}
+@keyframes NeonBtn3 {
+	0% {right: -100%;
+		filter: hue-rotate(180deg);}
+	50%,100% {right: 100%;
+			  filter: hue-rotate(270deg);}
+}
+@keyframes NeonBtn4 {
+	0% {bottom: -100%;
+		filter: hue-rotate(270deg);}
+	50%,100% {bottom: 100%;
+			  filter: hue-rotate(360deg);}
+}
+::-webkit-scrollbar {
+  width: 10px;
+  transition: 0.2s;
+  overflow-y: hidden;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  overflow-y: hidden;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#dddddd, #ffffff); 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(#dddddd, #ffffff);
+}
+
+.numSlider {
+	-webkit-appearance: none; 
+	position: absolute;
+	appearance: none;
+	width: 50%;
+	height: 2%;
+	margin-top: 23%;
+	margin-left: 25%;
+	background: linear-gradient(to top, #888, #000);
+	outline: none; 
+	border-radius: 5px;
+	opacity: 1;  
+	cursor: w-resize;
+	-webkit-transition: .3s;
+	transition: opacity .3s;
+	box-shadow: 0 3px #888;
+	border: 1px #ffffff solid;
+}
+.numSlider::-webkit-slider-thumb {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	-webkit-appearance: none;
+	appearance: none;
+	background: linear-gradient(to top, #ddd, #fff);
+	box-shadow: 0 0 0 2px #353535, 0 0 0 3px #3e3e3e, 0 0 4px
+	rgba(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), 0 0 15px rgba(0,0,0,.2);
+	transform-style: preserve-3d;
+	transform: rotateX(30deg);
+	cursor: w-resize;
+}
+.numSlider::-moz-range-thumb {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	-webkit-appearance: none;
+	appearance: none;
+	background: linear-gradient(to top, #888888, #000000);
+	box-shadow: 0 0 0 2px #353535, 0 0 0 3px #3e3e3e, 0 0 4px
+	rgba(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), 0 0 15px rgba(0,0,0,.2);
+}
+.ValueTxt {
+	position: fixed;
+	margin-top: 22.3%;
+	margin-left: 76%;
+	font-size: 15px;
+	font-family: Turret Road;
+	align-items: center;
+	text-align: center;
+	box-shadow: 0 6px #888;
+	background: linear-gradient(to top, #444444, #000000);
+	border: 1px #ffffff solid;
+	border-radius: 5px;
+	color: #ffffff;
+	padding: 6px;
+}
+
+.dayinfo {
+	position: fixed;
+	font-size: 30px;
+	margin-top: -65px;
+	margin-left: 30px;
+	font-family: Allerta Stencil;
+	align-items: center;
+	z-index: 20;
+	box-shadow: 0 0 0 2px #353535, 0 0 0 4px #3e3e3e, 0 0 0 4.5px
+	#403f40, 0 0 0 4px #4f4d4f, 0 5px 20px rgba(0,0,0,.5), 0 0 15px rgba(0,0,0,.2);
+	padding: 5px;
+	color: #000000;
+	background: linear-gradient(to bottom, #ffffff, #d9d9d9, #c7c7c7, #cccccc, #bababa);
+	border-radius: 5%;
+	vertical-align: middle;
+}
+.dayinfo span {
+	cursor: pointer; 
+	transition: 0.5s;
+	position: relative;
+	display: inline-block;
+}
+.dayinfo span:after {
+	content: 'dag';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.7s;
+}
+.dayinfo:hover span {
+	padding-right: 57px;
+}
+.dayinfo:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.modal {
+	display: none;
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(255,255,255,0.5); /* Black w/ opacity */
+}
+.modal-content {
+	position: relative;
+	background: linear-gradient(to top, #000000, #141414, #212121, #2b2b2b);
+	text-align: center;
+	margin: auto;
+	border: none;
+	width: 80%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s
+}	
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0;} 
+  to {top:0; opacity:1;}
+}
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+.modalheader {
+  padding: 2px 1px;
+  background: linear-gradient(to bottom, #000000, #141414, #212121, #2b2b2b);
+  border-bottom: 1px solid #ffffff;
+  color: white;
+}
+.modal-body {
+	padding: 16px 8px;
+}
+.modalclose {
+	padding: 5px;
+	position: fixed;
+	background-color: #ff0000;
+	margin-left: 480px;
+	margin-top: -85px;
+	color: #ffffff;
+	z-index: 20;
+	font-size: 20px;
+	text-decoration: none;
+	border-radius: 5px;
+}
+.ukeplanheader {
+	background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #000, #000, #000, #000, #000, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	animation: text 8s linear infinite;
+	-webkit-animation: text 8s linear infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: rgba(225, 225, 225, 0.2);
+	font-size: 2em;
+}
+
+.discord {
+	display: none;
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(255,255,255,0.5); /* Black w/ opacity */
+}
+.discord-content {
+	position: relative;
+	background: linear-gradient(to top, #000000, #141414, #212121, #2b2b2b);
+	text-align: center;
+	margin: auto;
+	border: none;
+	border-radius: 10px;
+	width: 50%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	-webkit-animation-name: animatediscordtop;
+	-webkit-animation-duration: 0.8s;
+	animation-name: animatediscordtop;
+	animation-duration: 0.8s
+}	
+.discord-body {
+	padding: 16px 8px;
+}
+@-webkit-keyframes animatediscordtop {
+  from {top:-300px; opacity:0; border-radius:0px;} 
+  to {top:0; opacity:1; border-radius:10px;}
+}
+@keyframes animatediscordtop {
+  from {top:-300px; opacity:0; border-radius:0px;}
+  to {top:0; opacity:1; border-radius:10px;}
+}
+</style> 
+<box id="headbox"></box>
+<p id="header" class="head" onclick="offtogulag()">10B Nettside</p>
+<div id="snackbar"></div>
+<p class="dayinfo" id="dag"><span id="dag2"></span></p>
+<button id="HelpBtn" title="Om" type="button" class="help" onclick="openHelp()"><i class="fa fa-question-circle" aria-hidden="true"></i></button>
+<div class="help-popup" id="myHelp">
+  <form action="/action_page.php">
+  <button type="button" class="helpbtn cancel" onclick="closeHelp()">X</button>
+  <profile1 style="font-size:vw;">Laget av</profile1>
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://scontent.fosl1-1.fna.fbcdn.net/v/t1.0-1/p160x160/71565127_523026921606699_4314861734838927360_n.jpg?_nc_cat=100&_nc_ohc=YwKNfcCbJ8MAQnouXwwqn1SEtVO534cERW_UoS8RpgNfMmxnChpDyIa6g&_nc_ht=scontent.fosl1-1.fna&oh=c42fd79076131269a9fee37cc4eb1cff&oe=5E8B8362" alt="Avatar" style="width:200px;height:200px;"></img>
+    </div>
+    <div class="flip-card-back">
+      <h1 style="font-size:2vw;">Erling Vik</h1> 
+      <p style="font-size:1.5vw;">Elev & Gamer</p> 
+      <p style="font-size:1.5vw;">Programmerer HTML, CSS, Batch og Powershell</p>
+    </div>
+  </div>
+</div>
+<div class="flip-card2">
+  <div class="flip-card-inner2">
+    <div class="flip-card-front2">
+      <img src="https://scontent.fosl1-1.fna.fbcdn.net/v/t1.0-1/42258308_350105315736831_2339131148946374656_n.jpg?_nc_cat=108&_nc_ohc=P3tV87O5cbQAQlFyVie4tAIfoSkW6exxiXqUkaLBzlHSvmKQ8netAh7qg&_nc_ht=scontent.fosl1-1.fna&oh=9dda4862260b8b4596a5a26f1a79f53f&oe=5E71EE14" alt="Avatar" style="width:200px;height:200px;"></img>
+    </div>
+	<div class="flip-card-back2">
+      <h1 style="font-size:2vw;">Arvid Wedtstein</h1> 
+      <p style="font-size:1.5vw;">Elev & Gamer</p> 
+      <p style="font-size:1.5vw;">Programmerer HTML, CSS, Batch og Powershell</p>
+    </div>
+  </div>
+</div>
+</div>
+</form>
+</div>
+</head>
+<body>
+<ul id="Ul" style="overflow-x:auto;">
+  <li title="Åpne Timeplan" onclick="ukebutton()"><a href="#">TimePlan</a></li>
+  <li class="dropdown">
+	<a id="drop1" onclick="dropdown1()" href="javascript:void(0) class="dropbtn"><img src="https://shawnharry.co.uk/wp-content/uploads/2019/01/new-teams-logo.png" width="20" height="19.5" align="top"></img></a>
+	<div id="showDropdown1" class="dropdown-content1">
+		<a target="_blank" href="https://teams.microsoft.com/_#/school/conversations/Generelt?threadId=19:a208956f932648559a911039b5dc5e5d@thread.skype&ctx=channel">10B</a>
+		<a target="_blank" href="https://teams.microsoft.com/_#/school/conversations/Generelt?threadId=19:b380d2e2e2674a3fbc117d3cba4dad91@thread.skype&ctx=channel">Norsk</a>
+		<a target="_blank" href="https://teams.microsoft.com/_#/school/conversations/Generelt?threadId=19:812e2dd49a034beea4080327e96c54fc@thread.skype&ctx=channel">Naturfag</a>
+		<a target="_blank" href="https://teams.microsoft.com/_#/school/conversations/Generelt?threadId=19:177186be2b0146f68d2c2eea96b8d5b8@thread.skype&ctx=channel">Matte</a>
+		<a target="_blank" href="https://teams.microsoft.com/_#/school/conversations/Generelt?threadId=19:11986284b0c544a396b4c7c03d58d618@thread.skype&ctx=channel">Samfunnsfag</a>
+		<a target="_blank" href="https://teams.microsoft.com/_#/school/conversations/Generelt?threadId=19:435b3fe143864e6ba7a0dafb104092c3@thread.skype&ctx=channel">Engelsk</a>
+		<a target="_blank" href="https://teams.microsoft.com/_#/school/conversations/Generelt?threadId=19:ffcc5586b8034be7886a723d9f7a0c42@thread.skype&ctx=channel">Krle</a>
+		<a target="_blank" href="https://teams.microsoft.com/_#/school/conversations/Generelt?threadId=19:9ae26a42ecd34d6e95848aee4859ed75@thread.skype&ctx=channel">K & H</a>
+		<a target="_blank" href="https://teams.microsoft.com/_#/school/conversations/Generelt?threadId=19:db7ec740f53b4846842f7c577c6c8105@thread.skype&ctx=channel">Utdanningvalg</a>
+		<a target="_blank" href="https://teams.microsoft.com/_#/school/conversations/Generelt?threadId=19:c5d8ad58b9e04612b60e95526abaa31f@thread.skype&ctx=channel">Tysk</a>
+		<a target="_blank" href="https://teams.microsoft.com/_#/school/conversations/Generelt?threadId=19:5410589a15264a94bc243594220136dc@thread.skype&ctx=channel">Spansk</a>
+		<a target="_blank" href="https://teams.microsoft.com/_#/school/conversations/Generelt?threadId=19:fcebf82a9c394c8fad3d5fc9aecffa38@thread.skype&ctx=channel">Fransk</a>
+	</div>
+  <li class="dropdown">
+    <a id="drop" onclick="dropdown()" href="javascript:void(0)" class="dropbtn">OneNote <i class="fa fa-angle-down fa-spin"></i></a>
+    <div id="showDropdown" class="dropdown-content">
+		<a target="_blank" href="https://minskole.sharepoint.com/sites/KlasseB2017-2020/_layouts/15/WopiFrame.aspx?sourcedoc={cf79f049-d763-4fc3-b82e-3cd1eebf3c68}&action=view&wd=target%28Velkommen.one%7C862850f5-dec8-40aa-80e4-170f690fdb2f%2FVelkommen%20til%2010B%20sin%20Infobok%21%20%5C%29%7C156b075a-8307-49f9-9546-c6c6e10742df%2F%29">10B</a>
+		<a target="_blank" href="https://minskole.sharepoint.com/sites/NorskB2017-2020/_layouts/15/WopiFrame.aspx?sourcedoc={0c04d531-8e94-4dd0-899b-5cce6224dfa2}&action=view&wd=target%28Velkommen.one%7C8a583da4-1592-41cf-a95a-1ec36ac5d7b3%2FNorskboken%20til%20B-klassen%7C753ccab3-c189-4a96-8761-5a0a030ae1f3%2F%29">Norsk</a>
+		<a target="_blank" href="https://minskole.sharepoint.com/sites/NaturfagB2017-2020/_layouts/15/WopiFrame.aspx?sourcedoc={e2c09935-0302-4e88-8c7e-25cef4e1c817}&action=view&wd=target%28Velkommen.one%7C820b3368-8495-41c7-9499-376d21461d83%2FNaturfagsboken%20for%2010B%7C8f5df8fc-f25a-488e-96bc-f6664c69168d%2F%29">Naturfag</a>
+		<a target="_blank" href="https://minskole.sharepoint.com/sites/MatematikkB2017-2020/_layouts/15/WopiFrame.aspx?sourcedoc={93e408df-8aff-4bc7-88aa-74ed1b749602}&action=view&wd=target%28Velkommen.one%7C29f9b4e2-e73e-4cfb-bba0-969b7dcc1357%2FMatematikkboken%20til%2010B%7Cb6e676e0-6921-480b-bd7e-69f68b000d1d%2F%29">Matte</a>
+		<a target="_blank" href="https://minskole.sharepoint.com/sites/SamfunnsfagB2017-2020/_layouts/15/WopiFrame.aspx?sourcedoc={e8a7a552-f7cb-4dac-ae8c-dfe76d19e83d}&action=view&wd=target%28Velkommen.one%7Ca7ea6d2e-c3ad-4797-bff9-c0e0f71824b0%2FSamfunnsfagboken%20for%2010B%7Ce36bd509-b911-4441-a0f1-a2df558ade8f%2F%29">Samfunnsfag</a>
+		<a target="_blank" href="https://minskole.sharepoint.com/:o:/r/sites/Tysk2017-2020/_layouts/15/WopiFrame.aspx?sourcedoc=%7B17747996-7F5A-47B1-A653-F5319B08E97A%7D&file=Notatblokk%20for%20Tysk%202017-2020&action=default&wdorigin=704&RootFolder=%2fsites%2fTysk2017%2d2020%2fSiteAssets%2fNotatblokk%20for%20Tysk%202017%2d2020&cid=98878526-ebf8-4982-8d0e-f6067ce7e1ce">Tysk</a>
+		<a target="_blank" href="https://minskole.sharepoint.com/sites/EngelskB2018-2021/_layouts/15/WopiFrame.aspx?sourcedoc={df5e883d-6cf5-41b2-8c05-55cf357cf3bc}&action=view&wd=target%28Velkommen.one%7C4655fb30-0ac3-4c84-a357-ac2cb9fe0eb2%2FVelkommen%20til%20Klassenotatblokk%7C8f5df8fc-f25a-488e-96bc-f6664c69168d%2F%29">Engelsk</a>
+		<a target="_blank" href="https://minskole.sharepoint.com/sites/KRLEB2017-2020/_layouts/15/WopiFrame.aspx?sourcedoc={bcca6417-e24d-4259-9a8c-f13c7778c1c3}&action=view&wd=target%28Velkommen.one%7C2b48358f-8b4d-4eae-a6cd-fec727c6365b%2FKRLE-boken%20til%20B-klassen%7C4cb0f3f7-bb56-407b-ad65-7a770aa179fa%2F%29">Krle</a>
+		<a target="_blank" href="https://minskole.sharepoint.com/sites/KH10b2019_2020/_layouts/15/WopiFrame.aspx?sourcedoc={4e29e0d2-5d60-4de7-a1cf-6a82e7814e2d}&action=view&wd=target%28Velkommen.one%7C0b77a05a-ad55-4bcf-bde5-59766d2ecece%2FVelkommen%20til%20Klassenotatblokken%7C18e5fe21-a272-4ee5-a4b8-0eeb203a67f1%2F%29">K & H</a>
+		<a target="_blank" href="https://minskole.sharepoint.com/sites/utdanningsvalg10.trinn2019-2020/_layouts/15/WopiFrame.aspx?sourcedoc={056cdb08-d013-4ad0-8956-b5e9a3ab5577}&action=view&wd=target%28Velkommen.one%7Cbedb24e8-f44d-4c4e-9e56-ae558559f51c%2FVelkommen%20til%20Klassenotatblokken%7C18e5fe21-a272-4ee5-a4b8-0eeb203a67f1%2F%29">Utdanningsvalg</a>
+		<a target="_blank" href="https://minskole.sharepoint.com/:o:/r/sites/Fransk2017-2020/_layouts/15/WopiFrame.aspx?sourcedoc=%7BAA4BBE7C-A3FE-4657-92F9-49A5B71331C6%7D&file=Notatblokk%20for%20Fransk%202017-2020&action=default&wdorigin=Sharepoint&RootFolder=%2fsites%2fFransk2017%2d2020%2fSiteAssets%2fNotatblokk%20for%20Fransk%202017%2d2020&web=1&ct=1574943760991&wdOrigin=OFFICECOM-WEB&START=&MRU=&cid=12631407-4c38-4142-a960-e9ec599c9716">Fransk</a>
+	</div>
+  </li>
+  <li id="Klasseliste" title="Åpne Klasseliste" onclick="openNav()"><a href="javascript:void(0)">Klasseliste</a></li>
+  <li title="Åpne Kalkulator" onclick="openKalk()"><a href="javascript:void(0)"><i class="fa fa-calculator"></i></a></li>
+  <li title="Åpne Kart" onclick="openMap()"><a href="javascript:void(0)"><i onclick="Toggle(this)" class="far fa-map"></i></a></li>
+  <li title="Været" onclick="openWeather()"><a href="javascript:void(0)"><i class="fas fa-cloud-sun-rain"></i></a></li>
+  <li title="Innstillinger" onclick="Settings()"><a href="javascript:void(0)"><i class="fas fa-cog"></i></a></li>
+  <li title="Discord" onclick="Discord()"><a href="javascript:void(0)"><i class="fab fa-discord"></i></a></li>
+</ul>
+
+
+<div id="myNav1" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeKalk()">&times;</a>
+  <div class="overlay-content">
+		<div class =""></div> 
+      <table2 border="1"> 
+         <tr2> 
+            <td2 colspan="3" rowspan="3"><input type="text" id="result"/></td2> 
+            <td2><input type="button" value="C" onclick="clr()"/> </td2> 
+         </tr2> 
+         <tr2> 
+            <td2><input type="button" value="7" onclick="dis('7')"/> </td2> 
+            <td2><input type="button" value="8" onclick="dis('8')"/> </td2> 
+            <td2><input type="button" value="9" onclick="dis('9')"/> </td2> 
+            <td2><input type="button" value=":" onclick="dis('/')"/> </td2> 
+         </tr2> 
+         <tr2> 
+            <td2><input type="button" value="4" onclick="dis('4')"/> </td2> 
+            <td2><input type="button" value="5" onclick="dis('5')"/> </td2> 
+            <td2><input type="button" value="6" onclick="dis('6')"/> </td2> 
+            <td2><input type="button" value="-" onclick="dis('-')"/> </td2> 
+         </tr2> 
+         <tr2> 
+            <td2><input type="button" value="1" onclick="dis('1')"/> </td2> 
+            <td2><input type="button" value="2" onclick="dis('2')"/> </td2> 
+            <td2><input type="button" value="3" onclick="dis('3')"/> </td2> 
+            <td2><input type="button" value="+" onclick="dis('+')"/> </td2>
+         </tr2> 
+         <tr2> 
+            <td2><input type="button" value="." onclick="dis('.')"/> </td2> 
+            <td2><input type="button" value="0" onclick="dis('0')"/> </td2> 
+            <td2><input type="button" value="=" onclick="solve()"/> </td2> 
+            <td2><input type="button" value="X" onclick="dis('*')"/> </td2> 
+         </tr2> 
+      </table2>
+	  <div id="gx">
+<svg id="gx-logo" class="tronFilter" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 400 400">
+<polyline class="draw" points="55.17 257.83 0.5 257.83 0.5 151.83 41.83 151.17 115.83 151.17 
+115.83 207.83 138.5 257.83 78.90 257.17 55.17 213.17 55.17 312.83 165.17 312.83 165.17 257.17 
+220.83 257.17 220.83 151.17 165.17 151.17 165.17 92.83 55.17 92.83 55.17 151.83"/>
+</svg>
+</div>
+</div>
+</div>
+
+<div id="Weather" class="overlay">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeWeather()">&times;</a>
+	<div class="overlay-content" id="WeatherOverlay">
+		<script src="https://www.yr.no/sted/Norge/Rogaland/Karmøy/Vormedal/ekstern_boks_liten.js"></script><noscript><a href="https://www.yr.no/sted/Norge/Rogaland/Karmøy/Vormedal/">yr.no: Værvarsel for Vormedal</a></noscript>
+	</div>
+</div>
+
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search" title="Søk"></input>
+		<p id="inputtext">WARNING! Caps lock er på.</p>
+	<ul1 id="myUL">
+    	<li1><a title="Kontakt Simen" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:c496f1be-952b-4559-ab8d-1e8346c70295?ctx=chat">1. Simen <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Vetle" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:233914d6-cf54-40ec-8a76-219526dde836?ctx=chat">2. Vetle <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Amalie" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:015fc72b-2420-4237-8a02-9f8615f83364?ctx=chat">3. Amalie <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Oda" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:a200af14-cf65-47e5-b14c-9f598f5d84c2?ctx=chat">4. Oda <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Rebecca" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:4534fa83-b09a-4a4a-9c4e-02f76542377f?ctx=chat">5. Rebecca <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Daniel" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:2e9f5944-304b-4375-9ee8-7666ace06d65?ctx=chat">6. Daniel <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Eirik E" target="_blank" href="https://teams.microsoft.com/_#/conversations/19:0951ae91-5eb4-4664-b9b5-11683308179a_2cd8374a-ddfc-4599-87cd-5af9b293e7b3@unq.gbl.spaces?ctx=chat">7. Eirik E <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Pia" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:a81cad58-fb74-48c4-85a0-8d2addf74899?ctx=chat">8. Pia <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Lisell" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:854103f2-cca2-4a13-83fb-4bb8d854343f?ctx=chat">9. Lisell <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Mathias" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:e6e12a80-dec4-43a1-bf62-023c87dfba74?ctx=chat">10. Mathias <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Anna Martha" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:048dae4b-b8cb-4a25-8cc2-550e08b32711?ctx=chat">11. Anna Martha <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Tuva" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:fd618dcd-7266-4555-8bca-92507cd269ae?ctx=chat">12. Tuva <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Mats" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:dfc72ae7-73c3-497f-b3e7-c10b87f6fad2?ctx=chat">13. Mats <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Victor" target="_blank" href="https://teams.microsoft.com/_#/conversations/19:2cd8374a-ddfc-4599-87cd-5af9b293e7b3_3d59fb54-b267-4e58-b892-81d9b1fcbb08@unq.gbl.spaces?ctx=chat">14. Victor <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Leah" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:b733effd-a66e-448a-853e-2740051156f7?ctx=chat">15. Leah Athina <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Elias" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:2cb93cc6-22e1-4850-9389-ad7d2de96bb7?ctx=chat">16. Elias <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Rikke" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:86adc145-aef3-4ac4-9edc-f689fbdb21c2?ctx=chat">17. Rikke <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Sara" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:07a04ad9-2019-4813-9fd8-e4bad45e83d7?ctx=chat">18. Sara <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Michelle" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:d446356f-5c06-47b7-bbfe-9972b8f0c919?ctx=chat">19. Michelle <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Eirik S" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:50e3a01c-88a3-43ef-af0c-6a6c3de303f5?ctx=chat">20. Eirik S <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Thea" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:2b900946-6e11-4e50-a79a-9c90c2e37089?ctx=chat">21. Thea <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Sonja" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:851bc1f9-4717-42ec-993b-b4c276e57a1b?ctx=chat">22. Sonja <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Bernt" target="_blank" href="https://teams.microsoft.com/_#/conversations/19:2cd8374a-ddfc-4599-87cd-5af9b293e7b3_b5a561dc-9a3a-4ec7-b507-5071fc22487c@unq.gbl.spaces?ctx=chat">23. Bernt Marius <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Marius" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:434a99f4-0d31-4f19-9443-4e9b6ce87871?ctx=chat">24. Marius <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Helene" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:1787fa3c-b4a9-4a53-a188-946cc76d9881?ctx=chat">25. Helene <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Erica" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:731e4b22-ba16-4537-b42d-e74ce8a20dce?ctx=chat">26. Erica <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Erling" target="_blank" href="https://teams.microsoft.com/_#/conversations/19:2cd8374a-ddfc-4599-87cd-5af9b293e7b3_a5197b89-2d7a-4396-bed5-61cee6dde374@unq.gbl.spaces?ctx=chat">27. Erling <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Nikolai" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:53dd6adb-d2f7-4ce7-b350-cde464a42074?ctx=chat">28. Nikolai <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Arvid" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:2cd8374a-ddfc-4599-87cd-5af9b293e7b3?ctx=chat">29. Arvid <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Emil" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:5f1ae0cd-bdeb-47bd-9a3e-de99401d9217?ctx=chat">30. Emil <i class="fa fa-user"></i></a></li1>
+		<li1><a title="Kontakt Olav" target="_blank" href="https://teams.microsoft.com/_#/conversations/8:orgid:3bb7dfdc-66f0-4bc2-80f0-efb0cc302877?ctx=chat">31. Olav <i class="fa fa-user"></i></a></li1>
+	</ul1>
+  </div>
+</div>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+  </form>
+</div>
+
+<div id="MyClockDisplay" class="clock" onload="showTime()"></div><div class="form-popupsettings" id="mySettings">
+  <form action="/action_page.php" class="form-containersettings">
+  <button type="button" class="btnsettings cancel" onclick="xSettings()">X</button>
+  <div class="line" id="line"></div>
+  <div class="smoke">
+	<h1 id="firetext" class="smoketext">
+		<span class="spansmoke">I</span>
+		<span class="spansmoke">N</span>
+		<span class="spansmoke">N</span>
+		<span class="spansmoke">S</span>
+		<span class="spansmoke">T</span>
+		<span class="spansmoke">I</span>
+		<span class="spansmoke">L</span>
+		<span class="spansmoke">L</span>
+		<span class="spansmoke">I</span>
+		<span class="spansmoke">N</span>
+		<span class="spansmoke">G</span>
+		<span class="spansmoke">E</span>
+		<span class="spansmoke">R</span>
+		</h1>
+		<div class="SettingsMenu">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<button type="button" title="Fullscreen" class="Maksimer" onclick="FullScreen()"><i class="fas fa-expand-arrows-alt"></i></button>
+			<button type="button" title="Exit Fullscreen" class="Minimer" onclick="ExitFullScreen()"><i class="fas fa-compress-arrows-alt"></i></button>
+			<button type="button" title="Print Siden" id="print" class="print" onclick="Print()"><i class="fas fa-print"></i></button>
+		</div>
+		<p class="stext">RGB Mode</p>
+		<p class="ntext">Nature Mode</p>
+		<input type="range" min="0" max="10" value="0" class="numSlider" id="nmbSlider"></input>
+		<p class="ValueTxt"><span id="nmbValue"></span></p>
+		</div>
+		<div class="center">
+			<input id="RGBism" onclick="RGBmode()" type="checkbox" name=""> [0]
+			<span class="span">On</span>
+			<span class="span">Off</span>
+		</div>
+		<div class="center2">
+			<input id="Nature" onclick="NatureMode()" type="checkbox" name=""> [0]
+			<span class="span">On</span>
+			<span class="span">Off</span>
+		</div>
+		<section>
+			<div id="metric" class="isometric" draggable="false" href="javascript:void(0)">
+			</div>
+		</section>
+	</form>
+</div>
+<div id="Map" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeMap()">&times;</a>
+  <div class="overlay-content">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d522343.6260501257!2d5.026542791140137!3d59.242676367074544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s5.2459068%201217%2059.3549206!5e0!3m2!1sen!2sno!4v1575228588245!5m2!1sen!2sno" frameborder="0" id="Map" width="100%" height="450px" heightstyle="border: 1px solid #000; margin-left: 0px; margin-top: -400px; z-index: 0;" allowfullscreen=""></iframe>
+</div>
+</div>
+
+<button title="Om" type="button" class="loader" onclick="openHelp()"></button>
+<div class="smoke"></div>
+
+
+<div class="modal" id="modalscript">
+	<div class="modal-content">
+		<div class="modalheader">
+			<h2 class="ukeplanheader">Timeplan</h2>
+		</div>
+		<a href="javascript:void(0)" class="modalclose" onclick="ukebuttonclose()">&times;</a>
+		<div class="modal-body">
+			<table>  
+				<tr>
+					<th>Kl</th>
+					<th>Mandag</th>
+					<th>Tirsdag</th>
+					<th>Onsdag</th>
+					<th>Torsdag</th>
+					<th>Fredag</th>
+				</tr>
+				<tr>
+					<td>08.25</td>
+					<td>Matematikk</td>
+					<td>Krle</td>
+					<td>Norsk</td>
+					<td>Engelsk</td>
+					<td>Fr. Språk</td>
+				</tr>
+				<tr>
+					<td>09.15</td>
+					<td>K & H</td>
+					<td>Svømming</td>
+					<td>Krle</td>
+					<td>Samfunnsfag</td>
+					<td>Fr. Språk</td>
+				</tr>
+				<tr>
+					<td>10.10</td>
+					<td>K & H</td>
+					<td>UTV</td>
+					<td>Gym</td>
+					<td>Naturfag</td>
+					<td>Naturfag</td>
+				</tr>
+				<tr>
+					<td>11.35</td>
+					<td>Samfunnsfag</td>
+					<td>Engelsk</td>
+					<td>Matematikk</td>
+					<td>Matematikk</td>
+					<td>Samfunnsfag</td>
+				</tr>
+				<tr>
+					<td>12.25</td>
+					<td>Norsk</td>
+					<td>Norsk</td>
+					<td>Engelsk</td>
+					<td>Valgfag</td>
+					<td>Norsk</td>
+				</tr>
+				<tr>
+					<td>13.20</td>
+					<td>Naturfag</td>
+					<td>Matematikk</td>
+					<td>Fr. Språk</td>
+					<td>Valgfag</td>
+					<td>Norsk</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+
+<div class="discord" id="discordscript">
+	<div class="discord-content">
+		<div id="discordrgb" class="discord-body">
+		<iframe src="https://discordapp.com/widget?id=524951977243836417&theme=dark" width="600" height="300" allowtransparency="true" frameborder="0"></iframe>
+		</div>
+	</div>
+</div>
+<script>
+
+function Clearlog() {
+	console.clear();
+	
+	var date = new Date();
+    var h = date.getHours(); 
+    var m = date.getMinutes(); 
+    var s = date.getSeconds();
+	var d = date.getDay();
+    if(h == 0){h = 12;}
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    var time = h + ":" + m + ":" + s;
+	console.info("Console has been cleared! " + "Time:" + time);
+}
+var printnum = 1
+function Print() {
+	window.print();
+	console.info("Page has been printed");
+}
+function add() {
+  printnum += 1;
+}
+
+
+var numberslider = document.getElementById("nmbSlider");
+var output = document.getElementById("nmbValue");
+output.innerHTML = numberslider.value;
+numberslider.oninput = function() {
+  output.innerHTML = this.value;
+  var t = this.value;
+  console.log(this.value);
+  if(this.value > 9) {
+	t -= 1;
+  }
+  document.getElementById("metric").style.webkitTransform = "translate(-50%,-50%) scale("+ "1."+ t + ") rotateX(45deg) rotateZ(-45deg)";
+  document.getElementById("metric").onmouseover = function() {hover()};
+  document.getElementById("metric").onmouseout = function() {hovernot()};
+  function hover() {
+	document.getElementById("metric").style.webkitTransform = "translate(-50%,-50%) scale("+ "1."+ t + ") rotateX(0deg) rotateZ(0deg)";
+  }
+  function hovernot() {
+	document.getElementById("metric").style.webkitTransform = "translate(-50%,-50%) scale("+ "1."+ t + ") rotateX(45deg) rotateZ(-45deg)";
+  }
+}
+
+var screen = document.documentElement;
+function FullScreen() {
+  var date = new Date();
+    var h = date.getHours(); 
+    var m = date.getMinutes(); 
+    var s = date.getSeconds();
+	var d = date.getDay();
+    if(h == 0){h = 12;}
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    var time = h + ":" + m + ":" + s;
+	console.info("Changed to Fullscreen " + "Time:" + time);
+  if (screen.requestFullscreen) {
+    screen.requestFullscreen();
+  } else if (screen.mozRequestFullScreen) { 
+    elem.mozRequestFullScreen();
+  } else if (screen.webkitRequestFullscreen) { 
+    elem.webkitRequestFullscreen();
+  } else if (screen.msRequestFullscreen) { 
+    screen.msRequestFullscreen();
+  }
+}
+function ExitFullScreen() {
+  var date = new Date();
+  var h = date.getHours(); 
+  var m = date.getMinutes(); 
+  var s = date.getSeconds();
+  var d = date.getDay();
+  if(h == 0){h = 12;}
+  h = (h < 10) ? "0" + h : h;
+  m = (m < 10) ? "0" + m : m;
+  s = (s < 10) ? "0" + s : s;
+  var time = h + ":" + m + ":" + s;
+  console.info("Exited Fullscreen " + "Time:" + time);
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.mozCancelFullScreen) { /* Firefox */
+    document.mozCancelFullScreen();
+  } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) { /* IE/Edge */
+    document.msExitFullscreen();
+  }
+}
+
+function openNav() {
+	document.getElementById("myNav").style.width = "30%";
+	document.getElementById("myNav1").style.width = "0%";
+}
+function closeNav() {
+	document.getElementById("myNav").style.width = "0%";
+}
+function openTP() {
+  document.getElementById("myForm").style.display = "block";
+  this.classList.toggle("active");
+  document.getElementById("myNav1").style.width = "0%";
+}
+function closeTP() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+function openHelp() {
+  document.getElementById("myHelp").style.display = "block";
+  document.getElementById("overlay").style.display = "block";
+  document.getElementById("myHelp").style.width = "100%";
+  this.classList.toggle("active");
+}
+function closeHelp() {
+  document.getElementById("myHelp").style.display = "none";
+  document.getElementById("overlay").style.display = "none";
+  document.getElementById("myHelp").style.width = "0%";
+  document.getElementByID("overlay").click();
+}
+
+dragElement(document.getElementById("myForm"));
+dragElement(document.getElementById("myHelp"));
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    elmnt.onmousedown = dragMouseDown;
+  }
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+	elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+
+function showTime(){
+    var date = new Date();
+    var h = date.getHours(); 
+    var m = date.getMinutes(); 
+    var s = date.getSeconds();
+	var d = date.getDay();
+    if(h == 0){
+        h = 12;
+    }
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    var time = h + " : " + m + " : " + s;
+    document.getElementById("MyClockDisplay").innerText = time;
+    setTimeout(showTime, 1000);
+}
+showTime();
+
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li1");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";	
+       }
+    }	
+	console.log(filter);
+	var inp = document.getElementById("myInput");
+	var text = document.getElementById("inputtext");
+	inp.addEventListener("keyup", function(event) {
+if (event.getModifierState("CapsLock")) {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+});
+}
+
+function openMap() {
+	document.getElementById("Map").style.width = "100%";
+	document.getElementById("Map").style.top = "0%";
+	document.getElementById("myNav1").style.width = "0%";
+	document.getElementById("mySettings").style.display = "none";
+	document.getElementById("Weather").style.width = "0%";
+	var date = new Date();
+    var h = date.getHours(); 
+    var m = date.getMinutes(); 
+    var s = date.getSeconds();
+	var d = date.getDay();
+    if(h == 0){h = 12;}
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    var time = h + ":" + m + ":" + s;
+	console.info("Opened map " + "Time:" + time);
+}
+function closeMap() {
+	document.getElementById("Map").style.width = "0%";
+	console.info("Closed map ");
+}
+function openWeather() {
+	document.getElementById("Weather").style.width = "15%";
+	document.getElementById("WeatherOverlay").style.width = "15%";
+	document.getElementById("Weather").style.background = "rgba(0,0,0,0.7)";
+	document.getElementById("Weather").style.transition = "0.5s";
+	document.getElementById("mySettings").style.display = "none";
+	document.getElementById("myNav1").style.width = "0%";
+	var date = new Date();
+    var h = date.getHours(); 
+    var m = date.getMinutes(); 
+    var s = date.getSeconds();
+	var d = date.getDay();
+    if(h == 0){h = 12;}
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    var time = h + ":" + m + ":" + s;
+	console.info("Opened Weather " + "Time:" + time);
+}
+function closeWeather() {
+	document.getElementById("Weather").style.width = "0%";
+	document.getElementById("WeatherOverlay").style.width = "0%";
+	var date = new Date();
+    var h = date.getHours(); 
+    var m = date.getMinutes(); 
+    var s = date.getSeconds();
+	var d = date.getDay();
+    if(h == 0){h = 12;}
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    var time = h + ":" + m + ":" + s;
+	console.info("Closed Weather " + "Time:" + time);
+}
+function dropdown() {
+document.getElementById("showDropdown").classList.toggle("show");
+}
+function dropdown1() {
+document.getElementById("showDropdown1").classList.toggle("show");
+}
+
+function openKalk() {
+	document.getElementById("myNav1").style.width = "20%";
+	document.getElementById("gx").style.display = "block";
+	document.getElementById("mySettings").style.display = "none";
+	document.getElementById("Weather").style.width = "0%";
+	var date = new Date();
+    var h = date.getHours(); 
+    var m = date.getMinutes(); 
+    var s = date.getSeconds();
+	var d = date.getDay();
+    if(h == 0){h = 12;}
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    var time = h + ":" + m + ":" + s;
+	console.info("Opened Calculator " + "Time:" + time);
+}
+function closeKalk() {
+	document.getElementById("myNav1").style.width = "0%";
+	document.getElementById("result").value = "" 
+	document.getElementById("gx").style.display = "none";
+	var date = new Date();
+    var h = date.getHours(); 
+    var m = date.getMinutes(); 
+    var s = date.getSeconds();
+	var d = date.getDay();
+    if(h == 0){h = 12;}
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    var time = h + ":" + m + ":" + s;
+	console.info("Closed Calculator " + "Time:" + time);
+}
+
+function Settings() {
+	document.getElementById("mySettings").style.display = "block";
+	document.getElementById("mySettings").style.animation = "visible 0.5s ease-in-out";
+	document.getElementById("Weather").style.width = "0%";
+	document.getElementById("myNav1").style.width = "0%";
+	var date = new Date();
+    var h = date.getHours(); 
+    var m = date.getMinutes(); 
+    var s = date.getSeconds();
+	var d = date.getDay();
+    if(h == 0){h = 12;}
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    var time = h + ":" + m + ":" + s;
+	console.info("Opened Settings " + "Time:" + time);
+}
+function xSettings() {
+	document.getElementById("mySettings").style.display = "none";
+	var date = new Date();
+    var h = date.getHours(); 
+    var m = date.getMinutes(); 
+    var s = date.getSeconds();
+	var d = date.getDay();
+    if(h == 0){h = 12;}
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    var time = h + ":" + m + ":" + s;
+	console.info("Closed Settings " + "Time:" + time);
+}
+         function dis(val) 
+         { 
+             document.getElementById("result").value+=val 
+         }          function solve() 
+         { 
+             let x = document.getElementById("result").value 
+             let y = eval(x) 
+             document.getElementById("result").value = y 
+			 console.log(y);
+         } 
+         function clr() 
+         { 
+             document.getElementById("result").value = "";
+			 console.log("Calculator Cleared");
+         } 
+		 
+function RGBmode() {
+  var checkBox = document.getElementById("RGBism");
+  if (checkBox.checked == true){
+	var element = document.body;
+	console.info("Turned ON RGBmode");
+	element.classList.toggle("rgb-mode");
+	var ul = document.getElementById("Ul");
+	document.getElementById("header").style.fontFamily="Frijole"; 
+	document.getElementById("HelpBtn").style.background="linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4)";
+	ul.style.background="linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4)";
+	ul.style.animation="text 18s linear infinite";
+	ul.style.WebkitAnimation = "text 18s linear infinite";
+	ul.style.BackgroundRepeat="no-repeat";
+    ul.style.backgroundSize="400%";
+	document.getElementById("MyClockDisplay").style.filter="hue-rotate(360deg)";
+	document.getElementById("MyClockDisplay").style.boxShadow= "0 2px 5px rgba(0,255,255,0.3)";
+	document.getElementById("MyClockDisplay").style.WebkitAnimation = "clockrgb 2s linear infinite";
+	document.getElementById("line").style.background="linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4)";
+	document.getElementById("discordrgb").style.background="linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4)";
+	document.getElementById("discordrgb").style.animation="text 18s linear infinite";
+	document.getElementById("discordrgb").style.BackgroundRepeat="no-repeat";
+    document.getElementById("discordrgb").style.backgroundSize="400%";
+	document.getElementById("firetext").style.WebkitAnimation="fire 3s linear infinite";
+ } else {
+  console.info("Turned OFF RGBmode");
+	var element = document.body;
+    element.classList.remove("rgb-mode");
+	document.getElementById("header").style.fontFamily="tillana"; 
+	document.getElementById("HelpBtn").style.background="linear-gradient(0deg, #ddd, #fff)";
+	document.getElementById("Ul").style.animation="none";
+	document.getElementById("Ul").style.background="#333";
+	document.getElementById("MyClockDisplay").style.animation="none";
+	document.getElementById("MyClockDisplay").style.boxShadow="none";
+	document.getElementById("MyClockDisplay").style.mixBlendMode="screen";
+	document.getElementById("line").style.background="#ffffff";
+	document.getElementById("firetext").style.WebkitAnimation="none";
+	document.getElementById("discordrgb").style.background="linear-gradient(0deg, #000000, #141414, #212121, #2b2b2b)";
+  }
+}
+function NatureMode() {
+  var checkBox = document.getElementById("Nature");
+  if (checkBox.checked == true){
+	var element = document.body;
+	document.getElementById("header").style.fontFamily="Cabin Sketch";
+	document.getElementById("header").style.top="-8px";
+	document.getElementById("headbox").style.background="url(http://starkovtattoo.spb.ru/images/700/DSC100726214.gif)";
+	document.getElementById("headbox").style.backgroundSize="cover";
+	element.classList.remove("rgb-mode");
+	document.getElementById("HelpBtn").style.background="linear-gradient(0deg, #ddd, #fff)";
+	document.getElementById("Ul").style.animation="none";
+	document.getElementById("Ul").style.background="#333";
+ } else {
+	document.getElementById("header").style.fontFamily="tillana";
+	document.getElementById("header").style.top="-18px";
+	document.getElementById("headbox").style.background="linear-gradient(to top, #333, #000)";
+	document.getElementById("Ul").style.background="#333";
+  }
+}
+
+window.addEventListener('load', ()=> {
+	let long;
+	let lat;
+	let temperatureDescription = document.querySelector(".h1");
+	if(navigator.geolocation){
+			navigator.geolocation.getCurrentPosition(position =>{
+				console.log(position);
+				long = position.coords.longitude;
+				lat = position.coords.latitude;
+				console.log(long);
+				console.log(lat);
+				
+				const proxy = "https://cors-anywhere.herokuapp.com/";
+				const api = "${proxy}https://api.darksky.net/forecast/029491bf3215b541110ec628964861f5/${lat},${long}";
+				
+				fetch(api)
+				.then(response =>{
+				return response.json();
+				})
+				.then(data => {
+					const {latitude, longitude } = data.coords;
+				});
+		});	
+	}
+});
+
+
+
+var day;
+switch (new Date().getDay()) {
+	case 0:
+		day = "Søn";
+		break;
+	case 1:
+		day = "Man";
+		break;
+	case 2:
+		day = "Tirs";
+		break;
+	case 3:
+		day = "Ons";
+		break;
+	case 4:
+		day = "Tors";
+		break;
+	case 5:
+		day = "Fre";
+		break;
+	case 6: 
+		day = "Lør";
+		break;
+	default:
+		day = "unknown";
+}
+var d = new Date();
+document.getElementById("dag2").innerHTML = d.getDate() + ". " + day;
+
+//Ukeplan
+var modal = document.getElementById("modalscript");
+function ukebutton() {
+	modal.style.display = "block";
+	document.getElementById("Map").style.width = "0%";
+	document.getElementById("myNav1").style.width = "0%";
+	document.getElementById("mySettings").style.display = "none";
+	document.getElementById("Weather").style.width = "0%";
+}
+function ukebuttonclose() {
+	modal.style.display = "none";
+}
+window.onclick = function(event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
+}
+
+function offtogulag() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+
+var discord = document.getElementById("discordscript");
+function Discord() {
+	discord.style.display = "block";
+	document.getElementById("Map").style.width = "0%";
+	document.getElementById("myNav1").style.width = "0%";
+	document.getElementById("mySettings").style.display = "none";
+	document.getElementById("Weather").style.width = "0%";
+}
+window.onclick = function(event) {
+	if (event.target == discord) {
+		discord.style.display = "none";
+	}
+}
+</script>
+</body>
+</html>
