@@ -18,3 +18,8 @@ node_modules
 *
 !/**/
 !*.*
+*.exe
+*.ico
+ref
+*.dll
+*.ini
