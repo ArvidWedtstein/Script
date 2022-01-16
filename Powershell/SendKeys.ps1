@@ -5,7 +5,7 @@ $myshell.sendkeys("{DEL}")
 
 Add-Type -AssemblyName System.Windows.Forms
 [System.Windows.Forms.SendKeys]::SendWait("^%{DELETE}")
-#Andre Måte
+#Andre Mï¿½te
 Add-Type -AssemblyName System.Windows.Forms
 [System.Windows.Forms.SendKeys]::SendWait("^%{DELETE}")
 Start-Sleep 100

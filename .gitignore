@@ -2,10 +2,11 @@
 *.targets
 *.cache
 *.editorconfig
-bin
-obj
+bin/
+obj/
 .vscode
-node_modules
+node_modules\
+/main/**/node_modules\
 *.pyc
 *.exe
 *.enc
@@ -29,4 +30,5 @@ ref
 *.enc
 *.msg
 *.xbm
+*.csproj
 build

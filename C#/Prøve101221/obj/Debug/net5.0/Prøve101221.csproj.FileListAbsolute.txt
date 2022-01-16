@@ -1,0 +1,16 @@
+I:\Script\C#\Prøve101221\bin\Debug\net5.0\Prøve101221.exe
+I:\Script\C#\Prøve101221\bin\Debug\net5.0\Prøve101221.deps.json
+I:\Script\C#\Prøve101221\bin\Debug\net5.0\Prøve101221.runtimeconfig.json
+I:\Script\C#\Prøve101221\bin\Debug\net5.0\Prøve101221.runtimeconfig.dev.json
+I:\Script\C#\Prøve101221\bin\Debug\net5.0\Prøve101221.dll
+I:\Script\C#\Prøve101221\bin\Debug\net5.0\ref\Prøve101221.dll
+I:\Script\C#\Prøve101221\bin\Debug\net5.0\Prøve101221.pdb
+I:\Script\C#\Prøve101221\obj\Debug\net5.0\Prøve101221.csproj.AssemblyReference.cache
+I:\Script\C#\Prøve101221\obj\Debug\net5.0\Prøve101221.GeneratedMSBuildEditorConfig.editorconfig
+I:\Script\C#\Prøve101221\obj\Debug\net5.0\Prøve101221.AssemblyInfoInputs.cache
+I:\Script\C#\Prøve101221\obj\Debug\net5.0\Prøve101221.AssemblyInfo.cs
+I:\Script\C#\Prøve101221\obj\Debug\net5.0\Prøve101221.csproj.CoreCompileInputs.cache
+I:\Script\C#\Prøve101221\obj\Debug\net5.0\Prøve101221.dll
+I:\Script\C#\Prøve101221\obj\Debug\net5.0\ref\Prøve101221.dll
+I:\Script\C#\Prøve101221\obj\Debug\net5.0\Prøve101221.pdb
+I:\Script\C#\Prøve101221\obj\Debug\net5.0\Prøve101221.genruntimeconfig.cache
