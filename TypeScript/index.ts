@@ -26,7 +26,40 @@ const person: Person = {
     last: "test",
     age: 5
 }
-
-const pow = (x: number, y: number) => {
-    return Math.pow(x, y);
+// for functions that don't return a value use : void
+//          |   args       args  | define return type 
+const pow = (x: number, y: number): string => {
+    return Math.pow(x, y).toString();
 }
+
+console.log(pow(5, 8));
+
+
+// arrays 
+
+// force array to only accept boolean types
+const arr: string[] = [];
+arr.push('test');
+
+
+// fixed length array | touple
+// add "?" to make arguments optional
+type MyList = [number?, string?, boolean?]
+
+const array: MyList = []
+array.push(5)
+array.push('test')
+
+
+// Generics
+
+class Observable<T> {
+    constructor(public value: T) {}
+}
+
+let x: Observable<number>;
+let p: Person = {first: "Ben", last: "Dover", age: 5};
+let y = new Observable<Person>(p);
+console.log(y.value)
+let z = new Observable(23);
+console.log(z)
