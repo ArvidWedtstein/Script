@@ -32,3 +32,4 @@ ref
 *.xbm
 *.csproj
 build
+/Html/*.jpg
