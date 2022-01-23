@@ -11,4 +11,5 @@ Enjoy
 | AutoHotKey | Script for å lage hotkeys, macros og software automasjon fort. |
 | Batch | Samling av random script jeg lagde i norsktimene på ungdomsskolen |
 | C# | Inneholder noen Prøver og noen øvingsoppgaver. |
-| HTML | Inneholder |
+| HTML | Inneholder masse øvingsnettsider. |
+|
