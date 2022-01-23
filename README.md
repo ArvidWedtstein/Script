@@ -3,7 +3,7 @@
 Collection av mitt søppel og mine forsøk på å skrive ok code.
 Enjoy
 
-
+==test==
 ## Oversikt over programmeringsspråk 
 
 | Language | Description |
@@ -18,5 +18,5 @@ Enjoy
 | **Powershell** | Inneholder noen powershell script jeg lagde for gøy. Run scriptene på egen risiko! |
 | **Python** | Inneholder python øvingsfiler og innleveringer. |
 | **TypeScript** | Typescript practice. |
-| **Visual Basic Script** (VBS) | Inneholder noen script jeg lagde for gøy. Kjører på ==egen== risiko. |
+| **Visual Basic Script** (VBS) | Inneholder noen script jeg lagde for gøy. Kjører på <mark>egen</mark> risiko. |
 | **Visual Basic** | Inneholder oppgaver og innleveringer |   
