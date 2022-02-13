@@ -1,5 +1,4 @@
-use prelude::prelude::*;
-
+use yew::prelude::*;
 
 /* Model */
 struct Model {
@@ -7,14 +6,14 @@ struct Model {
 }
 
 #[function_component(App)]
-fn app() => Html {
-    let state = use_state(|| Model {
-        value: 0
-    });
+fn app() -> Html {
+    
+    // let state = use_state(|| Model {
+    //     value: 0
+    // });
 
     let onclick = {
         let state = state.clone();
-
         Callback::from(move |_| {
             state.set(Model {
                 value: state.value + 1
@@ -33,3 +32,14 @@ fn app() => Html {
 fn main() {
     yew::start_app::<App>();
 }
+
+// #[function_component(App)]
+// fn app() -> Html {
+//     html! {
+//         <h1>{ "Hello World" }</h1>
+//     }
+// }
+
+// fn main() {
+//     yew::start_app::<App>();
+// }
