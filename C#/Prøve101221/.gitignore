@@ -213,3 +213,6 @@ project.lock.json
 *.Specs_*.html
 
 *.csproj.nuget.g.props
+*.csproj.nuget.dgspec.props
+*.csproj.nuget.g.targets
+*.nuget.cache
