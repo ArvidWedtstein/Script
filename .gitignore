@@ -33,5 +33,4 @@ ref
 *.csproj
 build
 /Html/*.jpg
-*.bootstrap-4.4.1.css
-*.css
+bootstrap-4.4.1.css
