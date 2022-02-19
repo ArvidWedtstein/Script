@@ -11,7 +11,9 @@ func main() {
 	log.SetPrefix("test:")
 	fmt.Println("hello world")
 
-	// arrays
+	// ----------------------------
+	// Arrays
+	// ----------------------------
 	yesarray := [3]string{"y", "e", "s"}
 
 	testarray := [5]string{"a", "b", "c"}
@@ -24,6 +26,15 @@ func main() {
 	// test array with infinite values
 	test := [...]int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
 	fmt.Println(test)
+
+	// slice array
+	btest := test[:]  // slice of all elements
+	ctest := test[3:] // slice from 4th element to end
+	dtest := test[:6] // slice first 6 elements
+
+	fmt.Println(btest)
+	fmt.Println(ctest)
+	fmt.Println(dtest)
 
 	// declare empty array
 	var tests [3]string
@@ -41,7 +52,10 @@ func main() {
 	fmt.Println(a)
 	fmt.Println(b)
 
-	// maps
+	/*
+	* Maps
+	 */
+
 	// YeSmap := map[string]string;
 
 	// YeSmap["test"] = "👾"
