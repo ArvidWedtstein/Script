@@ -117,4 +117,24 @@ func main() {
 	var year int = 2021
 	var p *int = &year
 	fmt.Println(p)
+
+	// ----------------------------
+	// String Formatting
+	// ----------------------------
+
+	// you can add variables to a string by using verbs in Sprintf
+	fmt.Sprintf("test %v", p)
+
+	// Verbs
+	// ------
+	// %v - It takes pretty much any variable type and formats it in the default style for that type.
+	// %s - Simply a string. This verb doesn’t interpret the string that’s passed in and so it shows up as is.
+	// %q - This verb formats values (i.e., arguments) with quotes
+	// %d - formats a regular old base-10 integer number.
+	// %t - formats a boolean value
+	// %b - formats binary
+	// %c - formats character
+	// %e - formats float
+	// %p - formats pointer value
+
 }
