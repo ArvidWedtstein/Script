@@ -27,7 +27,7 @@ public class main {
     int testarray[] = {1, 2, 3, 4};
 
     // pointer? of some sort..
-    int* charPointer = testarray;
+    int charPointer = testarray;
 
     charPointer++;
 
