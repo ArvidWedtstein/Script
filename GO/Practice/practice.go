@@ -158,6 +158,7 @@ func main() {
 		%e - formats float
 		%p - formats pointer value
 		%T - print out the type
+		%02d - Print out date format with 0 in front (2020-04-16)
 	*/
 
 	// ----------------------------

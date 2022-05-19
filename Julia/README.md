@@ -1,0 +1,3 @@
+# Julia Programming Language
+
+Imagine not being able to use emojis as a variable name...
