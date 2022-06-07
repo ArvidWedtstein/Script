@@ -34,3 +34,11 @@ ref
 build
 /Html/*.jpg
 bootstrap-4.4.1.css
+*.zip
+*.ctypes
+*.terms
+*.ppm
+*.eps
+.yarn
+.vscode
+.env.defaults
