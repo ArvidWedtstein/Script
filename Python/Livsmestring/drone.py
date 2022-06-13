@@ -28,17 +28,18 @@ tello = Tello()
 tello.connect(False)
 print('connected')
 
-tello.streamon()
-frame_read = tello.get_frame_read()
+# tello.streamon()
+# frame_read = tello.get_frame_read()
 
 tello.takeoff()
 
 tello.move_forward(10)
+tello.land()
 # tello.flip_forward()
 
-cv2.imwrite("img.png", frame_read.frame)
+# cv2.imwrite("img.png", frame_read.frame)
 
-tello.streamoff()
+# tello.streamoff()
 # take_img(frame_read)
 #( tello.rotate_clockwise(90)
 
