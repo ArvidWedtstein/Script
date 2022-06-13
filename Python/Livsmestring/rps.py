@@ -32,7 +32,7 @@ def rock_paper_scissors():
     computer_move = get_computer_move(random.choice("rps"))
     print("Computer move: " + computer_move)
     if player_move == computer_move:
-        print("It's a tie!")
+        print("It's a tie! But since computer is superior to you, you lose!")
     elif player_move == "rock":
         if computer_move == "paper":
             print("Computer wins!")
