@@ -35,7 +35,7 @@ tello.takeoff()
 
 tello.move_forward(10)
 tello.land()
-# tello.flip_forward()
+# tello.flip('b')
 
 # cv2.imwrite("img.png", frame_read.frame)
 

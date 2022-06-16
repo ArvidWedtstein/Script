@@ -5,6 +5,8 @@ r = 250
 t.speed(5)
 t.shape("turtle")
 t.pencolor("black")
+t.fillcolor("black")
+t.begin_fill()
 t.pensize(2)
 t.left(90)
 t.forward(120)
@@ -14,27 +16,36 @@ t.right(120)
 t.forward(150)
 t.right(90)
 t.forward(50)
-
+t.end_fill()
 t.penup()
+
+# move up
 t.right(90)
 t.forward(160)
+
+# dot over the "i"
 t.pendown()
+t.begin_fill()
 t.forward(80)
 t.right(100)
 t.forward(50)
 t.right(80)
 t.forward(40)
 t.right(60)
-t.forward(50)
-
+t.forward(60)
 t.left(60)
+t.end_fill()
 t.penup()
+
 t.forward(160)
 t.left(90)
-t.forward(100)
+t.forward(80)
 
+# M
 t.pendown()
 t.pencolor("cyan")
+t.fillcolor("cyan")
+t.begin_fill()
 t.forward(150)
 t.left(90)
 t.forward(240)
@@ -53,8 +64,9 @@ t.forward(120)
 t.right(90)
 t.forward(110)
 t.left(90)
-t.forward(40)
+t.forward(45)
+t.end_fill()
+
 t.penup()
 t.forward(100)
-
 test = input("test")
