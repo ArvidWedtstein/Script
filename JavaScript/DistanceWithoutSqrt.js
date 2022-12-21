@@ -1,11 +1,11 @@
 
 const dist = (x1,y1,x2,y2) => { 
-  if(!x2) x2=0; 
-  if(!y2) y2=0;
-  
   let num = (x2-x1)*(x2-x1)+(y2-y1)*(y2-y1);
   let s = ((num/2) + num / (num / 2)) / 2; 
-  s=(s + num / s) / 2;
+  for (let i=1;i<=10;i++) {
+    s = (s+num/s)/2;
+    console.log(s)
+  }
   return s
 }
 
