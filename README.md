@@ -15,7 +15,7 @@
   <h3 align="center">Scripts</h3>
 
   <p align="center">
-    Website for ARK: Survival Evolved Basespots and more
+    A collection of my (somewhat shameful) coding practice files
     <br />
     <a href="https://github.com/ArvidWedtstein/Script"><strong>Explore the docs »</strong></a>
     <br />
