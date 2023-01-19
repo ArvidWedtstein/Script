@@ -1,23 +1,128 @@
-### Scripts
+<a name="readme-top"></a>
 
-Collection av mitt søppel og mine forsøk på å skrive ok code.
-Enjoy
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
 
 
-## Oversikt over programmeringsspråk 
+<br />
+<div align="center">
+  <a href="https://github.com/ArvidWedtstein/Script">
+    <img src="" alt="Logo" width="80" height="80">
+  </a>
 
+  <h3 align="center">Scripts</h3>
+
+  <p align="center">
+    Website for ARK: Survival Evolved Basespots and more
+    <br />
+    <a href="https://github.com/ArvidWedtstein/Script"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/ArvidWedtstein/Script/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/ArvidWedtstein/Script/issues">Request Feature</a>
+  </p>
+</div>
+
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#usage">Usage</a>
+    </li>
+    <li><a href="#contributing">Contributing</a></li>
+  </ol>
+</details>
+
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+A collection of my trash/practices in programming languages and/or frameworks i found interesting and wanted to try out. 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<div align="left">
+
+![Stuff used in this project](https://arvidgithubembed.herokuapp.com/skills?languages=javascript,julia,r,lua,sql,ruby,go,php&backgroundcolor=0D1117&title=-&titlecolor=ffffff&textcolor=ffffff&boxcolor=CFCDFF&bordercolor=0D1117)
+
+</div>
+
+
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+To get a local copy up and running follow these simple steps.
+
+### Prerequisites
+
+To run this project you'll need to have git and some other things installed, depending on which language you want to run scripts of. 
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/ArvidWedtstein/Script.git
+   ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- USAGE EXAMPLES -->
+
+## Usage
+
+Can be used to see some of my practicing on programming.
+
+Below is a somewhat accurate description of the different stuff i've tried out
 | Language | Description |
 |   :---   |    :---:    |
-| **AutoHotKey** | Script for å lage hotkeys, macros og software automasjon fort. |
-| **Batch** | Samling av random script jeg lagde i norsktimene på ungdomsskolen. Run scriptene på `egen` risiko! |
-| **C#** | Inneholder noen Prøver og noen øvingsoppgaver. |
-| **HTML** | Inneholder masse øvingsnettsider. |
-| **Java** | Java practice. Ikke mye å se.. |
-| **JavaScript** | Inneholder en npm package test som jeg lagde til discord.js og en vscode extension test |
-| **LUA** | Inneholder lua scriptfiler som brukes i minecraft moden "ComputerCraft". |
-| **Powershell** | Inneholder noen powershell script jeg lagde for gøy. Run scriptene på `egen` risiko! |
-| **R** | test files |
-| **Python** | Inneholder python øvingsfiler og innleveringer. |
+| **AutoHotKey** | Script for making hotkeys, macros and to automate tasks pretty fast. |
+| **Batch** | Collection of random scripts i made in the math classes during ungdomsskolen. Run scripts at `your` own risk! I take no responsibility for any possible viruses, caused by my scripts! |
+| **C#** | Contains some practices and assignments from VG1 and VG2 |
+| **HTML** | Contains some practice websites. |
+| **Java** | Java practice. Not much to see there.. |
+| **JavaScript** | Contains a vscode extension test and some other stuff |
+| **LUA** | Contains some scripts for the minecraft mod "ComputerCraft" |
+| **Powershell** | Contains some scripts i made for fun. Again, run at your own risk! |
+| **R** | Mathematical test files |
+| **Python** | Contains practice files, and assignments from VG1 and VG2 |
 | **TypeScript** | Typescript practice. |
-| **Visual Basic Script** (VBS) | Inneholder noen script jeg lagde for gøy. Kjører på `egen` risiko. |
-| **Visual Basic** | Inneholder oppgaver og innleveringer |   
+| **Visual Basic Script** (VBS) | Contains some fun scripts (some call it virus). Run at your own risk! |
+| **Visual Basic** | Contains practice files and some assignments from VG1 and VG2 |   
+
+
+
+<!-- CONTRIBUTING -->
+
+## Contributing
+
+Please do not contribute to this trash right here.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/ArvidWedtstein/Script.svg?style=for-the-badge
+[contributors-url]: https://github.com/ArvidWedtstein/Script/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/ArvidWedtstein/Script.svg?style=for-the-badge
+[forks-url]: https://github.com/ArvidWedtstein/Script/network/members
+[stars-shield]: https://img.shields.io/github/stars/ArvidWedtstein/Script.svg?style=for-the-badge
+[stars-url]: https://github.com/ArvidWedtstein/Script/stargazers
+[issues-shield]: https://img.shields.io/github/issues/ArvidWedtstein/Script.svg?style=for-the-badge
+[issues-url]: https://github.com/ArvidWedtstein/Script/issues
