@@ -52,6 +52,25 @@
 
 A collection of my trash/practices in programming languages and/or frameworks i found interesting and wanted to try out. 
 
+
+Below is a somewhat accurate description of the different stuff i've tried out
+| Language | Description |
+|   :---   |    :---:    |
+| **AutoHotKey** | Script for making hotkeys, macros and to automate tasks pretty fast. |
+| **Batch** | Collection of random scripts i made in the math classes during ungdomsskolen. Run scripts at `your` own risk! I take no responsibility for any possible viruses, caused by my scripts! |
+| **C#** | Contains some practices and assignments from VG1 and VG2 |
+| **HTML** | Contains some practice websites. |
+| **Java** | Java practice. Not much to see there.. |
+| **JavaScript** | Contains a vscode extension test and some other stuff |
+| **LUA** | Contains some scripts for the minecraft mod "ComputerCraft" |
+| **Powershell** | Contains some scripts i made for fun. Again, run at your own risk! |
+| **R** | Mathematical test files |
+| **Python** | Contains practice files, and assignments from VG1 and VG2 |
+| **TypeScript** | Typescript practice. |
+| **Visual Basic Script** (VBS) | Contains some fun scripts (some call it virus). Run at your own risk! |
+| **Visual Basic** | Contains practice files and some assignments from VG1 and VG2 |   
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -86,24 +105,6 @@ To run this project you'll need to have git and some other things installed, dep
 ## Usage
 
 Can be used to see some of my practicing on programming.
-
-Below is a somewhat accurate description of the different stuff i've tried out
-| Language | Description |
-|   :---   |    :---:    |
-| **AutoHotKey** | Script for making hotkeys, macros and to automate tasks pretty fast. |
-| **Batch** | Collection of random scripts i made in the math classes during ungdomsskolen. Run scripts at `your` own risk! I take no responsibility for any possible viruses, caused by my scripts! |
-| **C#** | Contains some practices and assignments from VG1 and VG2 |
-| **HTML** | Contains some practice websites. |
-| **Java** | Java practice. Not much to see there.. |
-| **JavaScript** | Contains a vscode extension test and some other stuff |
-| **LUA** | Contains some scripts for the minecraft mod "ComputerCraft" |
-| **Powershell** | Contains some scripts i made for fun. Again, run at your own risk! |
-| **R** | Mathematical test files |
-| **Python** | Contains practice files, and assignments from VG1 and VG2 |
-| **TypeScript** | Typescript practice. |
-| **Visual Basic Script** (VBS) | Contains some fun scripts (some call it virus). Run at your own risk! |
-| **Visual Basic** | Contains practice files and some assignments from VG1 and VG2 |   
-
 
 
 <!-- CONTRIBUTING -->
