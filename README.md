@@ -8,10 +8,6 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/ArvidWedtstein/Script">
-    <img src="" alt="Logo" width="80" height="80">
-  </a>
-
   <h3 align="center">Scripts</h3>
 
   <p align="center">
